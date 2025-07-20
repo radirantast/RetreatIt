@@ -476,7 +476,6 @@ html {
 
 /* Контейнер формы */
 .contact-container {
-  max-width: 600px;
   margin: 0 auto;
   padding: 40px 20px;
   display: flex;
@@ -487,7 +486,7 @@ html {
 }
 
 .form-group {
-  width: 100%;
+  width: 350px;
   margin-bottom: 20px;
 }
 
