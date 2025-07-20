@@ -156,46 +156,89 @@ html {
   color: #000;
 }
 
+#FAQ {
+  max-width: 1200px;
+  border-top: #eeeeee 1px solid;
+  border-bottom: #eeeeee 1px solid;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
 .faq-section {
-  max-width: 700px;
   margin: 0 auto;
   padding: 2rem;
 }
 
 .faq-section h2 {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 32px;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 .faq-item {
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 0;
+  width: 400px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .faq-question {
-  background: none;
+  width: 400px;
+  background: #f1f1f1;
   border: none;
   width: 100%;
   text-align: left;
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
   cursor: pointer;
-  padding: 0;
-  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question::before {
+  content: '+';
+  margin-right: 10px;
+  font-weight: bold;
+  color: #888; /* Серый плюсик */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-item.active .faq-question::before {
+  content: '-';
+  color: #888; /* Минусик тоже серый */
 }
 
 .faq-question:hover {
-  color: #007bff;
+  background-color: #e5e5e5;
 }
 
 .faq-answer {
-  display: none;
-  padding-top: 0.5rem;
-  color: #555;
-  font-size: 0.95rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  color: #333;
+  font-size: 0.9rem;
   line-height: 1.5;
+  transition: all 0.4s ease;
 }
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  padding: 0.5rem 1rem;
+}
+
 
 /* Toggle display on click using JS */
 .faq-item.active .faq-answer {
@@ -476,7 +519,6 @@ html {
 
 /* Контейнер формы */
 .contact-container {
-  max-width: 600px;
   margin: 0 auto;
   padding: 40px 20px;
   display: flex;
@@ -487,7 +529,7 @@ html {
 }
 
 .form-group {
-  width: 100%;
+  width: 300px;
   margin-bottom: 20px;
 }
 
@@ -530,4 +572,43 @@ html {
 
 .submit-button:hover {
   background-color: #222;
+}
+
+#footer {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+}
+
+#footer .logo {
+  flex: 1;
+  text-align: left;
+}
+
+#footer .logo a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+#footer .footer-right {
+  display: flex;
+  gap: 4rem; /* расстояние между колонками */
+}
+
+#footer h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#footer p, 
+#footer address {
+  color: #777;
+  margin: 0.2rem 0;
+  font-style: normal;
 }

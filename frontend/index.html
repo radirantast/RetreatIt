@@ -271,7 +271,7 @@
         </div>
     </section>
 
-    <section id="Contact" class="container flex contact-container">
+    <section id="Contact" class="container contact-container">
         <div class="contact-header">
             <h2 class="title" style="text-align: center;">Contact Us</h2>
             <h2 class="subtitle" style="text-align: center;">Share your wishes or questions — our team will respond soon.</h2>
@@ -289,7 +289,7 @@
 
         <div class="form-group">
             <label for="Text" class="form-label">Text</label>
-            <textarea type="text" placeholder="Text..." id="Text" class="form-input"></textarea>
+            <textarea type="text" placeholder="Your Message..." id="Text" class="form-input"></textarea>
         </div>
 
         <div class="form-group">
@@ -299,76 +299,86 @@
 
 
     <section id="FAQ" class="faq-section">
-        <h2>F.A.Q</h2>
+        <h2 class="flex" >F.A.Q</h2>
 
-        <div class="faq-item">
-            <button class="faq-question">What is included in the retreat program?</button>
-            <div class="faq-answer">
-            Your stay includes airport pickup from Puerto Plata, accommodation in a private room with daily cleaning, full access to all healing activities, guided therapy sessions, personalized nutrition, and daily rituals such as tea ceremonies and meditations.
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">What is included in the retreat program?</button>
+                <div class="faq-answer">
+                Your stay includes airport pickup from Puerto Plata, accommodation in a private room with daily cleaning, full access to all healing activities, guided therapy sessions, personalized nutrition, and daily rituals such as tea ceremonies and meditations.
+                </div>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <button class="faq-question">Where is the retreat located?</button>
-            <div class="faq-answer">
-            The retreat is located in Cabarete, Dominican Republic—a vibrant, spiritual town known for its golden beaches, creative energy, and warm, welcoming community.
+            <div class="faq-item">
+                <button class="faq-question">Where is the retreat located?</button>
+                <div class="faq-answer">
+                The retreat is located in Cabarete, Dominican Republic—a vibrant, spiritual town known for its golden beaches, creative energy, and warm, welcoming community.
+                </div>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <button class="faq-question">What is your healing philosophy?</button>
-            <div class="faq-answer">
-            We combine evidence-based care with natural therapies and emotional support. Our focus is on presence, ethical practices, and creating a nurturing environment where nature, body, and spirit align.
+            <div class="faq-item">
+                <button class="faq-question">What is your healing philosophy?</button>
+                <div class="faq-answer">
+                We combine evidence-based care with natural therapies and emotional support. Our focus is on presence, ethical practices, and creating a nurturing environment where nature, body, and spirit align.
+                </div>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <button class="faq-question">Who will guide the healing sessions?</button>
-            <div class="faq-answer">
-            All sessions are led by experienced, licensed therapists who use international medical protocols and personalized care to ensure your safety and well-being.
+            <div class="faq-item">
+                <button class="faq-question">Who will guide the healing sessions?</button>
+                <div class="faq-answer">
+                All sessions are led by experienced, licensed therapists who use international medical protocols and personalized care to ensure your safety and well-being.
+                </div>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <button class="faq-question">What kind of accommodation can I expect?</button>
-            <div class="faq-answer">
-            You’ll stay in a private room with a double bed, balcony, fresh linens, and soft, calming design. Hygiene, comfort, and peaceful rest are our priorities.
+            <div class="faq-item">
+                <button class="faq-question">What kind of accommodation can I expect?</button>
+                <div class="faq-answer">
+                You’ll stay in a private room with a double bed, balcony, fresh linens, and soft, calming design. Hygiene, comfort, and peaceful rest are our priorities.
+                </div>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <button class="faq-question">Is this retreat suitable for people going through illness or recovery?</button>
-            <div class="faq-answer">
-            Yes. Our program is designed for people who are healing physically, emotionally, or spiritually. We support each guest individually with care and compassion.
+            <div class="faq-item">
+                <button class="faq-question">Is this retreat suitable for people going through illness or recovery?</button>
+                <div class="faq-answer">
+                Yes. Our program is designed for people who are healing physically, emotionally, or spiritually. We support each guest individually with care and compassion.
+                </div>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <button class="faq-question">How do I book a spot?</button>
-            <div class="faq-answer">
-            You can book through our website’s payment section. If you have questions before booking, feel free to contact us—we’re here to guide you.
+            <div class="faq-item">
+                <button class="faq-question">How do I book a spot?</button>
+                <div class="faq-answer">
+                You can book through our website’s payment section. If you have questions before booking, feel free to contact us—we’re here to guide you.
+                </div>
             </div>
-        </div>
 
-        <script>
-            document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const item = button.parentElement;
-                item.classList.toggle('active');
-            });
-            });
-        </script>  
+            <script>
+                document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const item = button.parentElement;
+                    item.classList.toggle('active');
+                });
+                });
+            </script> 
+        </div> 
     </section>
 
 
-    <section id="footer">
-        <h4>RetreatIt<sup>®</sup></h4>
+<section id="footer">
+    <div class="logo"><a>Retreat<sup>®</sup></a></div>
+    <div class="footer-right">
         <div>
             <h4>Contact</h4>
             <p>WhatsApp: +1 829 357 6629</p>
-            <p><Address>Emaar Road, Cabarete</Address></p>
-            <p><Address>Jardin Deportivo, 57000 DR</Address></p>
+            <p><address>Emaar Road, Cabarete</address></p>
+            <p><address>Jardin Deportivo, 57000 DR</address></p>
         </div>
-    </section>
+        <div>
+            <h4>Retreat</h4>
+            <p>Program</p>
+            <p>Accommodation</p>
+            <p>Pricing</p>
+        </div>
+    </div>
+</section>
 </body>
 </html>
