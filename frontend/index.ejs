@@ -11,9 +11,10 @@
   <meta property="og:image" content="https://yourdomain.com/images/hero-preview.jpg" />
   <meta property="og:url" content="https://yourdomain.com" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <title>Healing Retreat in the Dominican Republic | Retreat It</title>
+  <link rel="icon" href="./svjeez/favicon-32x32.png" type="image/png" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -289,7 +290,7 @@
                       <li>✓ Direct consultation before booking</li>
                       <li>✓ Contact us</li>
                     </ul>
-                    <button class="btn-price secondary">Contact</button>
+                    <button class="btn-price secondary" onclick="location.href='#Contact'">Contact</button>
                   </div>
                 </div>
               </div>              
@@ -304,21 +305,21 @@
 
         <div class="form-group">
             <label for="Name" class="form-label">Name</label>
-            <input type="text" placeholder="John Smith" id="Name" class="form-input">
+            <input type="text" placeholder="John Smith" id="Name" name="Name" class="form-input">
         </div>
 
         <div class="form-group">
             <label for="Email" class="form-label">Email</label>
-            <input type="text" placeholder="example@gmail.com" id="Email" class="form-input">
+            <input type="text" placeholder="example@gmail.com" id="Email" name="Email" class="form-input">
         </div>
 
         <div class="form-group">
             <label for="Text" class="form-label">Text</label>
-            <textarea type="text" placeholder="Your Message..." id="Text" class="form-input"></textarea>
+            <textarea type="text" placeholder="Your Message..." id="Text" name="Text" class="form-input"></textarea>
         </div>
 
-        <div class="form-group">
-            <input type="button" value="Submit" onclick="msg()" class="btn-price secondary submit-button">
+        <div class="form-group">>
+            <button type="submit" value="Submit" class="btn-price secondary submit-button">Submit</button>  
         </div>
     </section>
 
@@ -389,7 +390,7 @@
 
 
 <section id="footer">
-    <div class="logo"><a>Retreat<sup>®</sup></a></div>
+    <div class="logo"><a>Retreat It<sup>®</sup></a></div>
     <div class="footer-right">
         <div>
             <h4>Contact</h4>
