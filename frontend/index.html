@@ -43,14 +43,14 @@
             <li style="font-weight: 600;"><a href="#Pricing">Pricing</a></li>
           </ul>
         </div>
-        <a href="#Pricing" class="btn-price primary navbar-btn">Start Retreat</a>
-      </nav>          
+        <a href="#Pricing" class="primary navbar-btn">Start Retreat</a>
+    </nav>          
 
     <header class="container flex hero">
         <img src="./pnjeez/Z1TR1L7AqkuDz8IRMzaEswZaU.png.avif" class="hero-image">
         <div class="hero-text">
-            <h1 style="color: black; font-size: 40px;">A healing journey.</h1>
-            <h1 style="color: #616161; font-size: 40px;">In the heart of the Dominican Republic.</h1>
+            <h1 style="color: black;">A healing journey.</h1>
+            <h1 style="color: #616161;">In the heart of the Dominican Republic.</h1>
         </div>
     </header>
 
@@ -121,8 +121,6 @@
   </div>
 </section>
 
-
-
     <section id="Philosophy" class="container flex">
         <div class="welcome-text">
             <h2>Our Healing Philosophy</h2>
@@ -143,7 +141,7 @@
     </section>
 
     <div id="accomindation" class="container flex">
-        <img src="./pnjeez/SgqisnMGwMiCF0KwP6AQnjiSwvs.png.avif" style="border-radius: 25px; margin-bottom: 100px;">
+        <img src="./pnjeez/SgqisnMGwMiCF0KwP6AQnjiSwvs.png.avif" class="beach-image">
     </div>
 
     <section id="Sanctuary" class="container">
@@ -202,7 +200,6 @@
         </div>
     </section>
 
-
     <section id="testimonials" class="testimonials-section">
         <div class="testimonials-header">
             <h2 class="title">Stories of renewal.</h2>
@@ -229,7 +226,6 @@
             </div>
         </div>
     </section>
-
 
     <section id="quote" class="container">
         <div>
@@ -298,34 +294,35 @@
     </section>
 
     <section id="Contact" class="container contact-container">
-        <div class="contact-header">
-            <h2 class="title" style="text-align: center;">Contact Us</h2>
-            <h2 class="subtitle" style="text-align: center;">Share your wishes or questions — our team will respond soon.</h2>
+    <div class="contact-header">
+        <h2 class="title" style="text-align: center;">Contact Us</h2>
+        <h2 class="subtitle" style="text-align: center;">Share your wishes or questions — our team will respond soon.</h2>
+    </div>
+
+    <form method="POST" action="/" class="contact-form">
+        <div class="form-group">
+        <label for="Name" class="form-label">Name</label>
+        <input type="text" placeholder="John Smith" id="Name" name="Name" class="form-input" required>
         </div>
 
         <div class="form-group">
-            <label for="Name" class="form-label">Name</label>
-            <input type="text" placeholder="John Smith" id="Name" name="Name" class="form-input">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" placeholder="example@gmail.com" id="Email" name="Email" class="form-input" required>
         </div>
 
         <div class="form-group">
-            <label for="Email" class="form-label">Email</label>
-            <input type="text" placeholder="example@gmail.com" id="Email" name="Email" class="form-input">
+        <label for="Text" class="form-label">Text</label>
+        <textarea placeholder="Your Message..." id="Text" name="Text" class="form-input"></textarea>
         </div>
 
         <div class="form-group">
-            <label for="Text" class="form-label">Text</label>
-            <textarea type="text" placeholder="Your Message..." id="Text" name="Text" class="form-input"></textarea>
+        <button type="submit" class="btn-price secondary submit-button">Submit</button>  
         </div>
-
-        <div class="form-group">>
-            <button type="submit" value="Submit" class="btn-price secondary submit-button">Submit</button>  
-        </div>
+    </form>
     </section>
 
-
     <section id="FAQ" class="faq-section">
-        <h2 class="flex" >F.A.Q</h2>
+        <h2 class="flex">F.A.Q</h2>
 
         <div class="faq-container">
             <div class="faq-item">
@@ -376,35 +373,35 @@
                 You can book through our website’s payment section. If you have questions before booking, feel free to contact us—we’re here to guide you.
                 </div>
             </div>
-
-            <script>
-                document.querySelectorAll('.faq-question').forEach(button => {
-                button.addEventListener('click', () => {
-                    const item = button.parentElement;
-                    item.classList.toggle('active');
-                });
-                });
-            </script> 
         </div> 
     </section>
 
+    <section id="footer">
+        <div class="logo"><a>Retreat It<sup>®</sup></a></div>
+        <div class="footer-right">
+            <div>
+                <h4>Contact</h4>
+                <p>WhatsApp: +1 829 357 6629</p>
+                <p><address>Emaar Road, Cabarete</address></p>
+                <p><address>Jardin Deportivo, 57000 DR</address></p>
+            </div>
+            <div>
+                <a href="https://retreatit.net/terms" style="text-decoration: none; color: inherit; cursor: pointer;"><h4>Terms Of Using</h4></a>
+                <p>Program</p>
+                <p>Accommodation</p>
+                <p>Pricing</p>
+            </div>
+        </div>
+    </section>
 
-<section id="footer">
-    <div class="logo"><a>Retreat It<sup>®</sup></a></div>
-    <div class="footer-right">
-        <div>
-            <h4>Contact</h4>
-            <p>WhatsApp: +1 829 357 6629</p>
-            <p><address>Emaar Road, Cabarete</address></p>
-            <p><address>Jardin Deportivo, 57000 DR</address></p>
-        </div>
-        <div>
-            <h4>Retreat</h4>
-            <p>Program</p>
-            <p>Accommodation</p>
-            <p>Pricing</p>
-        </div>
-    </div>
-</section>
+    <script>
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
