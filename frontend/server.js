@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/terms', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend', 'terms', 'index.html'));
+  res.sendFile(path.join(__dirname, 'frontend', 'terms.html'));
 });
 
 app.get('/', (req, res) => {
