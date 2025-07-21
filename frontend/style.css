@@ -96,13 +96,13 @@ html {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem; /* Increased from 20px */
 }
 
 .nav-left .logo a {
     font-weight: 700;
     color: black;
-    font-size: 20px; /* Increased from 16px */
+    font-size: 1.25rem; /* Increased from 16px */
     text-decoration: none;
     white-space: nowrap;
 }
@@ -112,25 +112,25 @@ html {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 10px;
+    gap: 0.625rem; /* Increased from 10px */
 }
 
 .nav-left li a {
     text-decoration: none;
     color: #999;
-    padding: 8px 12px; /* Increased from 6px 10px */
+    padding: 0.5rem 0.75rem; /* Increased from 6px 10px */
     font-size: 1.1rem; /* Increased from 0.9rem */
 }
 
 .navbar-btn {
-    padding: 8px 10px; /* Increased from 6px 8px */
+    padding: 0.5rem 0.625rem; /* Increased from 6px 8px */
     border-radius: 10px;
     font-weight: 600;
-    font-size: 16px; /* Increased from 13px */
+    font-size: 1rem; /* Increased from 13px */
     text-decoration: none;
     background-color: #000;
     color: #fff;
-    max-width: 120px; /* Increased from 100px */
+    max-width: 7.5rem; /* Increased from 100px */
     text-align: center;
     white-space: nowrap;
     display: inline-block;
@@ -406,7 +406,7 @@ html {
     padding: 30px 24px;
     width: 100%;
     max-width: 340px;
-    min-height: 400px;
+    min-height: 400px; /* Fixed minimum height for uniformity */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -617,27 +617,27 @@ html {
 
     .nav-left {
         flex-direction: row;
-        gap: 8px;
+        gap: 1rem; /* Increased from 8px */
     }
 
     .nav-left .logo a {
-        font-size: 16px; /* Increased from 13px (~23%) */
+        font-size: 1rem; /* Increased from 16px */
     }
 
     .nav-left ul {
         flex-direction: row;
-        gap: 6px;
+        gap: 0.5rem; /* Increased from 6px */
     }
 
     .nav-left li a {
-        padding: 6px 10px; /* Increased from 4px 8px (~25%) */
-        font-size: 0.9rem; /* Increased from 0.7rem (~28%) */
+        padding: 0.375rem 0.75rem; /* Increased from 0.3rem 0.6rem */
+        font-size: 1rem; /* Increased from 0.8rem */
     }
 
     .navbar-btn {
-        padding: 6px 8px; /* Increased from 4px 6px (~25%) */
-        font-size: 14px; /* Increased from 11px (~27%) */
-        max-width: 132px; /* Increased from 110px (~20%) */
+        padding: 0.5rem 0.5rem; /* Increased from 4px 6px */
+        font-size: 0.875rem; /* Increased from 11px */
+        max-width: 8.75rem; /* Increased from 110px */
         text-align: center;
         white-space: nowrap;
         margin: 0;
@@ -863,26 +863,26 @@ html {
     }
 
     .nav-left {
-        gap: 5px;
+        gap: 0.625rem; /* Increased from 5px */
     }
 
     .nav-left .logo a {
-        font-size: 12px; /* Increased from 8px (~50%) */
+        font-size: 0.75rem; /* Increased from 12px */
     }
 
     .nav-left ul {
-        gap: 4px;
+        gap: 0.25rem; /* Increased from 4px */
     }
 
     .nav-left li a {
-        padding: 4px 6px; /* Increased from 2px 3px (~33%) */
-        font-size: 0.7rem; /* Increased from 0.6rem (~17%) */
+        padding: 0.25rem 0.5rem; /* Increased from 0.2rem 0.3rem */
+        font-size: 0.875rem; /* Increased from 0.7rem */
     }
 
     .navbar-btn {
-        padding: 4px 6px; /* Increased from 2px 3px (~33%) */
-        font-size: 11px; /* Increased from 7px (~57%) */
-        max-width: 108px; /* Increased from 80px (~35%) */
+        padding: 0.375rem 0.375rem; /* Increased from 3px 4px */
+        font-size: 0.75rem; /* Increased from 9px */
+        max-width: 6.75rem; /* Increased from 90px */
         text-align: center;
         white-space: nowrap;
         margin: 0;
@@ -1042,26 +1042,26 @@ html {
     }
 
     .nav-left {
-        gap: 1px;
+        gap: 0.25rem; /* Increased from 1px */
     }
 
     .nav-left .logo a {
-        font-size: 10px; /* Increased from 8px (~25%) */
+        font-size: 0.625rem; /* Increased from 8px */
     }
 
     .nav-left ul {
-        gap: 1px;
+        gap: 0.125rem; /* Increased from 1px */
     }
 
     .nav-left li a {
-        padding: 2px 4px; /* Increased from 1px 1px (~50%) */
-        font-size: 0.65rem; /* Increased from 0.6rem (~8%) */
+        padding: 0.125rem 0.25rem; /* Increased from 0.1rem 0.1rem */
+        font-size: 0.75rem; /* Increased from 0.6rem */
     }
 
     .navbar-btn {
-        padding: 3px 5px; /* Increased from 2px 3px (~25%) */
-        font-size: 9px; /* Increased from 7px (~29%) */
-        max-width: 96px; /* Increased from 80px (~20%) */
+        padding: 0.25rem 0.25rem; /* Increased from 2px 3px */
+        font-size: 0.625rem; /* Increased from 7px */
+        max-width: 5rem; /* Increased from 80px */
         text-align: center;
         white-space: nowrap;
         margin: 0;
@@ -1250,7 +1250,7 @@ html {
     .card {
         padding: 30px 24px;
         max-width: 340px;
-        min-height: 400px;
+        min-height: 400px; /* Fixed minimum height for uniformity */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1316,13 +1316,13 @@ html {
     }
 
     .nav-left {
-        gap: 20px;
+        gap: 1.25rem; /* Increased from 20px */
     }
 
     .navbar-btn {
-        padding: 8px 10px;
-        font-size: 16px;
-        max-width: 120px;
+        padding: 0.5rem 0.625rem; /* Increased from 6px 8px */
+        font-size: 1rem; /* Increased from 13px */
+        max-width: 7.5rem; /* Increased from 100px */
         text-align: center;
         white-space: nowrap;
         margin-left: auto;
