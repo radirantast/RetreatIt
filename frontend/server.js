@@ -30,7 +30,7 @@ app.post('/', async (req, res) => {
 
   const nodeMailerOptions = {
       from: 'fotstripeonly@gmail.com',
-      to: 'bacold.vvv@gmail.com',
+      to: 'darya.prosyanko@mail.ru',
       subject: 'Retreat',
       text: `Name: ${Name}\nEmail: ${Email}\nMessage: ${Text}\n`
   };
