@@ -10,11 +10,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/terms', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend', 'terms.html'));
+  res.sendFile(path.join(__dirname, 'terms.html'));
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const transporter = nodemailer.createTransport({
