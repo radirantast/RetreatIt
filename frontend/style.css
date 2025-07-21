@@ -102,7 +102,7 @@ html {
 .nav-left .logo a {
     font-weight: 700;
     color: black;
-    font-size: 16px;
+    font-size: 20px; /* Increased from 16px */
     text-decoration: none;
     white-space: nowrap;
 }
@@ -118,19 +118,19 @@ html {
 .nav-left li a {
     text-decoration: none;
     color: #999;
-    padding: 6px 10px;
-    font-size: 0.9rem;
+    padding: 8px 12px; /* Increased from 6px 10px */
+    font-size: 1.1rem; /* Increased from 0.9rem */
 }
 
 .navbar-btn {
-    padding: 6px 8px;
+    padding: 8px 10px; /* Increased from 6px 8px */
     border-radius: 10px;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 16px; /* Increased from 13px */
     text-decoration: none;
     background-color: #000;
     color: #fff;
-    max-width: 100px;
+    max-width: 120px; /* Increased from 100px */
     text-align: center;
     white-space: nowrap;
     display: inline-block;
@@ -406,7 +406,7 @@ html {
     padding: 30px 24px;
     width: 100%;
     max-width: 340px;
-    min-height: 400px; /* Fixed minimum height for uniformity */
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -620,20 +620,24 @@ html {
         gap: 8px;
     }
 
+    .nav-left .logo a {
+        font-size: 16px; /* Increased from 13px (~23%) */
+    }
+
     .nav-left ul {
         flex-direction: row;
         gap: 6px;
     }
 
     .nav-left li a {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.8rem;
+        padding: 6px 10px; /* Increased from 4px 8px (~25%) */
+        font-size: 0.9rem; /* Increased from 0.7rem (~28%) */
     }
 
     .navbar-btn {
-        padding: 4px 6px;
-        font-size: 11px;
-        max-width: 110px;
+        padding: 6px 8px; /* Increased from 4px 6px (~25%) */
+        font-size: 14px; /* Increased from 11px (~27%) */
+        max-width: 132px; /* Increased from 110px (~20%) */
         text-align: center;
         white-space: nowrap;
         margin: 0;
@@ -862,19 +866,23 @@ html {
         gap: 5px;
     }
 
+    .nav-left .logo a {
+        font-size: 12px; /* Increased from 8px (~50%) */
+    }
+
     .nav-left ul {
         gap: 4px;
     }
 
     .nav-left li a {
-        padding: 0.2rem 0.3rem;
-        font-size: 0.7rem;
+        padding: 4px 6px; /* Increased from 2px 3px (~33%) */
+        font-size: 0.7rem; /* Increased from 0.6rem (~17%) */
     }
 
     .navbar-btn {
-        padding: 3px 4px;
-        font-size: 9px;
-        max-width: 90px;
+        padding: 4px 6px; /* Increased from 2px 3px (~33%) */
+        font-size: 11px; /* Increased from 7px (~57%) */
+        max-width: 108px; /* Increased from 80px (~35%) */
         text-align: center;
         white-space: nowrap;
         margin: 0;
@@ -1038,8 +1046,7 @@ html {
     }
 
     .nav-left .logo a {
-        font-size: 8px;
-        white-space: nowrap;
+        font-size: 10px; /* Increased from 8px (~25%) */
     }
 
     .nav-left ul {
@@ -1047,14 +1054,14 @@ html {
     }
 
     .nav-left li a {
-        padding: 0.1rem 0.1rem;
-        font-size: 0.6rem;
+        padding: 2px 4px; /* Increased from 1px 1px (~50%) */
+        font-size: 0.65rem; /* Increased from 0.6rem (~8%) */
     }
 
     .navbar-btn {
-        padding: 2px 3px;
-        font-size: 7px;
-        max-width: 80px;
+        padding: 3px 5px; /* Increased from 2px 3px (~25%) */
+        font-size: 9px; /* Increased from 7px (~29%) */
+        max-width: 96px; /* Increased from 80px (~20%) */
         text-align: center;
         white-space: nowrap;
         margin: 0;
@@ -1243,7 +1250,7 @@ html {
     .card {
         padding: 30px 24px;
         max-width: 340px;
-        min-height: 400px; /* Fixed minimum height for uniformity */
+        min-height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1313,9 +1320,9 @@ html {
     }
 
     .navbar-btn {
-        padding: 6px 8px;
-        font-size: 13px;
-        max-width: 100px;
+        padding: 8px 10px;
+        font-size: 16px;
+        max-width: 120px;
         text-align: center;
         white-space: nowrap;
         margin-left: auto;

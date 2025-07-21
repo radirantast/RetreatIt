@@ -9,7 +9,6 @@ app.use(express.static(path.join(__dirname)));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
 app.get('/terms', (req, res) => {
   res.sendFile(path.join(__dirname, 'frontend', 'terms', 'index.html'));
 });
@@ -36,15 +35,14 @@ app.post('/', async (req, res) => {
       text: `Name: ${Name}\nEmail: ${Email}\nMessage: ${Text}\n`
   };
 
-  transporter.sendMail(nodeMailerOptions, (err, info) => {
-    if (err) {
-      console.error(err);
-      return res.status(500).json(err);
-    }
-    res.status(200);
-  });
+  try {
+    await transporter.sendMail(nodeMailerOptions);
+    res.json({ success: true, message: 'Message sent successfully!' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Message was not sent successfully!' });
+  }
 });
-
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
