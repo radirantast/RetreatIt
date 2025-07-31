@@ -8,12 +8,12 @@
   <meta name="author" content="Retreat It" />
   <meta property="og:title" content="Healing Retreat in the Dominican Republic | Retreat It" />
   <meta property="og:description" content="Transform your well-being with yoga, nutrition, and therapy in a tropical sanctuary. Cabarete awaits you." />
-  <meta property="og:image" content="https://yourdomain.com/images/hero-preview.jpg" />
-  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:image" content="https://retreatit.net/images/hero-preview.jpg" />
+  <meta property="og:url" content="https://retreatit.net" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <title>Healing Retreat in the Dominican Republic | Retreat It</title>
+  <title data-key="title">Healing Retreat in the Dominican Republic | Retreat It</title>
   <link rel="icon" href="./svjeez/favicon-32x32.png" type="image/png" />
   <script type="application/ld+json">
     {
@@ -37,25 +37,26 @@
     <nav id="navbar" class="container">
         <div class="nav-left">
           <div class="logo"><a>Retreat It<sup>®</sup></a></div>
+          <button id="language-toggle" class="language-btn">EN/RU</button>
           <ul>
-            <li style="font-weight: 600;"><a href="#Program">Program</a></li>
-            <li style="font-weight: 600;"><a href="#Philosophy">Philosophy</a></li>
-            <li style="font-weight: 600;"><a href="#Pricing">Pricing</a></li>
+            <li style="font-weight: 600;"><a href="#Program" data-key="nav-program">Program</a></li>
+            <li style="font-weight: 600;"><a href="#Philosophy" data-key="nav-philosophy">Philosophy</a></li>
+            <li style="font-weight: 600;"><a href="#Pricing" data-key="nav-pricing">Pricing</a></li>
           </ul>
         </div>
-        <a href="#Pricing" class="primary navbar-btn">Start Retreat</a>
+        <a href="#Pricing" class="primary navbar-btn" data-key="nav-start-retreat">Start Retreat</a>
     </nav>          
 
     <header class="container flex hero">
         <img src="./pnjeez/Z1TR1L7AqkuDz8IRMzaEswZaU.png.avif" class="hero-image" style="border-radius: 25px;">
         <div class="hero-text">
-            <h1 style="color: black;">A healing journey.</h1>
-            <h1 style="color: #616161;">In the heart of the Dominican Republic.</h1>
+            <h1 style="color: black;" data-key="hero-title1">A healing journey.</h1>
+            <h1 style="color: #616161;" data-key="hero-title2">In the heart of the Dominican Republic.</h1>
         </div>
     </header>
 
     <section id="underheading" class="container">
-        <h1>
+        <h1 data-key="underheading-text">
             Retreat in the heart of 
             the Dominican Republic's most serene 
             beach town. Warmth, healing, and nature meet here. <br>
@@ -69,16 +70,16 @@
 
     <section id="Welcome" class="container flex">
         <div class="welcome-text">
-            <h2>Atmosphere & Welcome</h2>
-            <p>We will meet you at the Puerto Plata 
+            <h2 data-key="welcome-title">Atmosphere & Welcome</h2>
+            <p data-key="welcome-text1">We will meet you at the Puerto Plata 
                 airport and take you to your hotel in the heart of Cabarete. This unique town, vibrant and authentic,
                 draws visitors in with creativity and spiritual energy.
             </p>
-            <p>After a restful arrival, you'll experience a meditative tea ceremony 
+            <p data-key="welcome-text2">After a restful arrival, you'll experience a meditative tea ceremony 
                 at sunset slow down, reflect, and set intentions for your healing journey. 
                 The soft sounds of the ocean and warm lights create instant comfort.
             </p>
-            <p>
+            <p data-key="welcome-text3">
                 Cabarete's essence is felt in its golden beaches, smiling locals, 
                 colorful markets, and gentle rhythms. 
                 Here, every sunrise sparks renewal and a sense of belonging.
@@ -90,48 +91,48 @@
     <div class="card-grid">
         <div class="noname-card">
         <img src="./pnjeez/wd9Lc3POAFIPeWuKZuMkueVs6I.jpg.avif" alt="Medical Supervision" />
-        <h3>Medical Supervision</h3>
-        <p>Continuous support from certified professionals.</p>
+        <h3 data-key="program-card1-title">Medical Supervision</h3>
+        <p data-key="program-card1-text">Continuous support from certified professionals.</p>
         </div>
         <div class="noname-card">
         <img src="./pnjeez/photo_5434066775965822185_y.jpg" alt="Therapeutic Massage" />
-        <h3>Therapeutic Massage</h3>
-        <p>Full-body sessions tailored to your needs.</p>
+        <h3 data-key="program-card2-title">Therapeutic Massage</h3>
+        <p data-key="program-card2-text">Full-body sessions tailored to your needs.</p>
         </div>
         <div class="noname-card">
         <img src="./pnjeez/photo_5434066775965822187_y.jpg" alt="Aqua Aerobics" />
-        <h3>Aqua Aerobics</h3>
-        <p>Gentle movement in warm ocean water.</p>
+        <h3 data-key="program-card3-title">Aqua Aerobics</h3>
+        <p data-key="program-card3-text">Gentle movement in warm ocean water.</p>
         </div>
         <div class="noname-card">
         <img src="./pnjeez/photo_5434066775965822186_y.jpg" alt="Nutrition & Juices" />
-        <h3>Nutrition & Juices</h3>
-        <p>5 meals a day + herbal teas and fresh juices</p>
+        <h3 data-key="program-card4-title">Nutrition & Juices</h3>
+        <p data-key="program-card4-text">5 meals a day + herbal teas and fresh juices</p>
         </div>
         <div class="noname-card">
         <img src="./pnjeez/photo_5434066775965822646_y.jpg" alt="Breathing & Joint Work" />
-        <h3>Breathing & Joint Work</h3>
-        <p>Improve flexibility and inner calm</p>
+        <h3 data-key="program-card5-title">Breathing & Joint Work</h3>
+        <p data-key="program-card5-text">Improve flexibility and inner calm</p>
         </div>
         <div class="noname-card">
         <img src="./pnjeez/aFfRQz1ytsSVMTKaAmU0bY2v7Y.jpg.avif" alt="Yoga & Morning Movement" />
-        <h3>Yoga & Morning Movement</h3>
-        <p>Start each day with presence and energy</p>
+        <h3 data-key="program-card6-title">Yoga & Morning Movement</h3>
+        <p data-key="program-card6-text">Start each day with presence and energy</p>
         </div>
         <div class="noname-card">
         <img src="./pnjeez/photo_2025-07-31_17-07-41.jpg" alt="Dances" />
-        <h3>Dances</h3>
-        <p>Energizing sessions to move, connect, and feel alive.
+        <h3 data-key="program-card7-title">Dances</h3>
+        <p data-key="program-card7-text">Energizing sessions to move, connect, and feel alive.</p>
         </div>
         <div class="noname-card">
         <img src="./pnjeez/photo_2025-07-31_17-07-39.jpg" alt="Tea ceremony" />
-        <h3>Tea ceremony</h3>
-        <p>A calming ritual to ground and restore.</p>
+        <h3 data-key="program-card8-title">Tea ceremony</h3>
+        <p data-key="program-card8-text">A calming ritual to ground and restore.</p>
         </div>
         <div class="noname-card">
         <img src="./pnjeez/photo_2025-07-31_17-07-39 (2).jpg" alt="Different activities" />
-        <h3>Different activities</h3>
-        <p>Daily adventures to spark joy and discovery.</p>
+        <h3 data-key="program-card9-title">Different activities</h3>
+        <p data-key="program-card9-text">Daily adventures to spark joy and discovery.</p>
         </div>
         <div class="noname-card">
         <h3></h3>
@@ -139,8 +140,8 @@
         </div>
         <div class="noname-card">
         <img src="./pnjeez/photo_2025-07-31_17-07-37.jpg" alt="Fantastic Meals" />
-        <h3>Fantastic Meals</h3>
-        <p>Wholesome dishes made to fuel and delight.</p>
+        <h3 data-key="program-card10-title">Fantastic Meals</h3>
+        <p data-key="program-card10-text">Wholesome dishes made to fuel and delight.</p>
         </div>
         <div class="noname-card">
         <h3></h3>
@@ -150,52 +151,52 @@
     </section>
 
     <section id="Philosophy" class="container flex">
-        <div class="welcome-text">
-            <h2 class="title" style="text-align: center;">Program</h2>
-            <p><strong>Daily Practices (Every Day):</strong> Start each day with 10–15 minutes of gratitude and intention setting, followed by a 5–10 minute candle blessing ritual where you light a candle and speak a word like peace or hope. Engage in 30–40 minutes of gentle breathwork and guided meditation, and end with a 5-minute grounding exercise. Total time: ~1–1.25 hours.</p>
+        <div class="welcome-text" style="margin-bottom: 70px;">
+            <h2 class="title" style="text-align: center;" data-key="philosophy-title">Program</h2>
+            <p data-key="philosophy-text1"><strong>Daily Practices (Every Day):</strong> Start each day with 10–15 minutes of gratitude and intention setting, followed by a 5–10 minute candle blessing ritual where you light a candle and speak a word like peace or hope. Engage in 30–40 minutes of gentle breathwork and guided meditation, and end with a 5-minute grounding exercise. Total time: ~1–1.25 hours.</p>
 
-            <h3>Three Core Modules</h3>
-            <p><strong>Module 1 (Days 1–5): Letting Go of the Past</strong><br>Focus on releasing emotional burdens, deconstructing identity, exploring ancestral awareness, and honoring body memories through practices tailored for emotional clearing and acceptance.</p>
-            <p><strong>Module 2 (Days 6–10): The Sacred Middle</strong><br>Reconnect with your inner voice, build self-worth, rewrite internal narratives, and cultivate compassion for your past selves, emphasizing healing and integration.</p>
-            <p><strong>Module 3 (Days 11–14): Becoming the Living Prayer</strong><br>Live intentionally, anchor spiritually, design your post-retreat life, and participate in a final integration and legacy ritual to embody renewal.</p>
+            <h3 data-key="philosophy-module-title">Three Core Modules</h3>
+            <p data-key="philosophy-module1"><strong>Module 1 (Days 1–5): Letting Go of the Past</strong><br>Focus on releasing emotional burdens, deconstructing identity, exploring ancestral awareness, and honoring body memories through practices tailored for emotional clearing and acceptance.</p>
+            <p data-key="philosophy-module2"><strong>Module 2 (Days 6–10): The Sacred Middle</strong><br>Reconnect with your inner voice, build self-worth, rewrite internal narratives, and cultivate compassion for your past selves, emphasizing healing and integration.</p>
+            <p data-key="philosophy-module3"><strong>Module 3 (Days 11–14): Becoming the Living Prayer</strong><br>Live intentionally, anchor spiritually, design your post-retreat life, and participate in a final integration and legacy ritual to embody renewal.</p>
 
-            <h3>Module 1 Details: Letting Go of the Past</h3>
-            <p>Designed for ages 50+, this module uses gentle meditation, breathwork, and energy practices to reduce stress, reconnect with body and spirit, awaken intuitive clarity, and foster inner connection over 14 days.</p>
+            <h3 data-key="philosophy-module1-details">Module 1 Details: Letting Go of the Past</h3>
+            <p data-key="philosophy-module1-text">Designed for ages 50+, this module uses gentle meditation, breathwork, and energy practices to reduce stress, reconnect with body and spirit, awaken intuitive clarity, and foster inner connection over 14 days.</p>
 
-            <h4>Day 1: Welcome & Assessment</h4>
-            <p>Arrive in the late afternoon for a 45-minute opening circle to meet facilitators and journal on questions like “What brought me here?” and “What do I want to let go of?” Follow with a 20-minute seated body scan and diaphragmatic breathing, and close with a 15-minute candle blessing ritual, sharing one word like clarity or hope.</p>
+            <h4 data-key="philosophy-day1-title">Day 1: Welcome & Assessment</h4>
+            <p data-key="philosophy-day1-text">Arrive in the late afternoon for a 45-minute opening circle to meet facilitators and journal on questions like “What brought me here?” and “What do I want to let go of?” Follow with a 20-minute seated body scan and diaphragmatic breathing, and close with a 15-minute candle blessing ritual, sharing one word like clarity or hope.</p>
 
-            <h4>Daily Practice</h4>
-            <p><strong>Morning Flow (60 min):</strong> Begin with a 5-minute arrival ritual (bell or essential oil), followed by 10 minutes of seated breathwork (diaphragmatic, box, or ocean breath), 15 minutes of guided visualization, 15 minutes of gentle movements like shoulder rotations or standing sways, 10 minutes of sound activation (toning like OM), and 5 minutes to share a closing word. <strong>Evening Practice (30–40 min):</strong> Includes 10 minutes of stillness meditation, 5 minutes of body gratitude (“Thank you heart…”), 10 minutes of mantra or whisper prayer, and optional candle gazing or star reflection. Practices adapt for limited mobility, emotional sensitivity, or spiritual openness, using tools like chairs, breathwork cards, essential oils, journals, candles, and ambient music. Morning sessions are outdoors; evenings are indoors with candles.</p>
+            <h4 data-key="philosophy-daily-title">Daily Practice</h4>
+            <p data-key="philosophy-daily-text"><strong>Morning Flow (60 min):</strong> Begin with a 5-minute arrival ritual (bell or essential oil), followed by 10 minutes of seated breathwork (diaphragmatic, box, or ocean breath), 15 minutes of guided visualization, 15 minutes of gentle movements like shoulder rotations or standing sways, 10 minutes of sound activation (toning like OM), and 5 minutes to share a closing word. <strong>Evening Practice (30–40 min):</strong> Includes 10 minutes of stillness meditation, 5 minutes of body gratitude (“Thank you heart…”), 10 minutes of mantra or whisper prayer, and optional candle gazing or star reflection. Practices adapt for limited mobility, emotional sensitivity, or spiritual openness, using tools like chairs, breathwork cards, essential oils, journals, candles, and ambient music. Morning sessions are outdoors; evenings are indoors with candles.</p>
 
-            <h4>Day 2: Releasing the Emotional Dust</h4>
-            <p>Spend 1.5 hours in the morning with gratitude, gentle movement, breath alignment, a “Washing the Window of the Heart” visualization, a candle blessing naming fears, and silent mantra reflection. Take a 30-minute mid-morning walk with herbal tea, discussing what silence revealed. Engage in a 75-minute psychotherapy activity, “Emotional Timeline Mapping,” where you draw a timeline of emotional highs and lows, share in pairs, and affirm, “I honor all my seasons.” Optionally, end with a 15-minute aroma ritual using frankincense or lavender. Evening suggestions include a sound bath or stargazing. Total time: ~4.5 hours.</p>
+            <h4 data-key="philosophy-day2-title">Day 2: Releasing the Emotional Dust</h4>
+            <p data-key="philosophy-day2-text">Spend 1.5 hours in the morning with gratitude, gentle movement, breath alignment, a “Washing the Window of the Heart” visualization, a candle blessing naming fears, and silent mantra reflection. Take a 30-minute mid-morning walk with herbal tea, discussing what silence revealed. Engage in a 75-minute psychotherapy activity, “Emotional Timeline Mapping,” where you draw a timeline of emotional highs and lows, share in pairs, and affirm, “I honor all my seasons.” Optionally, end with a 15-minute aroma ritual using frankincense or lavender. Evening suggestions include a sound bath or stargazing. Total time: ~4.5 hours.</p>
 
-            <h4>Day 3: The Wisdom of the Heart</h4>
-            <p>Begin with a 90-minute morning session: 15-minute gratitude circle, 10-minute heart-centered breathwork, 25-minute “House of the Heart” meditation, 10-minute self-love candle blessing, and 20-minute journaling on heart messages, with optional sharing. Mid-morning, write a 30-minute letter to your 14-year-old self. In a 75–90 minute psychospiritual session, explore “The Guesthouse” theme with somatic awareness, an “Emotion Stones” ritual choosing a stone to represent your emotion, and optional pair sharing. Evening includes a 30-minute wind-down with music, mantra, and dream journaling. Adaptive care addresses overwhelm, numbness, vivid memories, or joy with tailored responses like private check-ins or altar tasks. Total time: ~4.25 hours.</p>
+            <h4 data-key="philosophy-day3-title">Day 3: The Wisdom of the Heart</h4>
+            <p data-key="philosophy-day3-text">Begin with a 90-minute morning session: 15-minute gratitude circle, 10-minute heart-centered breathwork, 25-minute “House of the Heart” meditation, 10-minute self-love candle blessing, and 20-minute journaling on heart messages, with optional sharing. Mid-morning, write a 30-minute letter to your 14-year-old self. In a 75–90 minute psychospiritual session, explore “The Guesthouse” theme with somatic awareness, an “Emotion Stones” ritual choosing a stone to represent your emotion, and optional pair sharing. Evening includes a 30-minute wind-down with music, mantra, and dream journaling. Adaptive care addresses overwhelm, numbness, vivid memories, or joy with tailored responses like private check-ins or altar tasks. Total time: ~4.25 hours.</p>
 
-            <h4>Day 4: The Grief Garden</h4>
-            <p>Honor grief in a 90-minute morning session with a gratitude circle, 10-minute breath of release, 25-minute “Garden of Grief” meditation, 20-minute journaling, and 10-minute silent hand-on-heart moment. Mid-morning, join a 60–75 minute “Grief Garden Ritual” outdoors, naming grief, lighting candles, and adding salt to water for shared healing. In a 75–90 minute session, write letters for “I Never Said Goodbye” to address unspoken grief, share in small groups, and complete with an embodied exercise. Evening offers a 30–40 minute wind-down with music, a “Final Goodbye” whisper ritual, and take-home grief prayer cards. Adaptive responses support emotional release, withdrawal, anger, or joy. Total time: ~4.25 hours.</p>
+            <h4 data-key="philosophy-day4-title">Day 4: The Grief Garden</h4>
+            <p data-key="philosophy-day4-text">Honor grief in a 90-minute morning session with a gratitude circle, 10-minute breath of release, 25-minute “Garden of Grief” meditation, 20-minute journaling, and 10-minute silent hand-on-heart moment. Mid-morning, join a 60–75 minute “Grief Garden Ritual” outdoors, naming grief, lighting candles, and adding salt to water for shared healing. In a 75–90 minute session, write letters for “I Never Said Goodbye” to address unspoken grief, share in small groups, and complete with an embodied exercise. Evening offers a 30–40 minute wind-down with music, a “Final Goodbye” whisper ritual, and take-home grief prayer cards. Adaptive responses support emotional release, withdrawal, anger, or joy. Total time: ~4.25 hours.</p>
 
-            <h4>Day 5: Inner Reconciliation</h4>
-            <p>Make peace with your past in a 90-minute morning session: gratitude circle, 20-minute Ho’oponopono breathwork with your inner child, 25-minute “Mirror Within” meditation, 20-minute journaling on blamed parts of self, and 10-minute sharing circle. Mid-morning, perform a 60–75 minute “Returning the Blame” ritual, burning letters of shame and placing petals in water. In a 75–90 minute session, explore “The Soft Animal of the Body” with somatic awareness, self-compassion mapping, micro-sharing, and a whisper vow ritual. Evening includes a 30–45 minute gratitude walk, circle chant, and dream journaling. Adaptive care supports unforgiveness, doubt, peace, or physical sensations. Total time: ~4.5 hours.</p>
+            <h4 data-key="philosophy-day5-title">Day 5: Inner Reconciliation</h4>
+            <p data-key="philosophy-day5-text">Make peace with your past in a 90-minute morning session: gratitude circle, 20-minute Ho’oponopono breathwork with your inner child, 25-minute “Mirror Within” meditation, 20-minute journaling on blamed parts of self, and 10-minute sharing circle. Mid-morning, perform a 60–75 minute “Returning the Blame” ritual, burning letters of shame and placing petals in water. In a 75–90 minute session, explore “The Soft Animal of the Body” with somatic awareness, self-compassion mapping, micro-sharing, and a whisper vow ritual. Evening includes a 30–45 minute gratitude walk, circle chant, and dream journaling. Adaptive care supports unforgiveness, doubt, peace, or physical sensations. Total time: ~4.5 hours.</p>
 
-            <h3>Yoga, Massage, and Nutrition</h3>
-            <p><strong>Day 1:</strong> Gentle grounding yoga with hip release and alternate nostril breathing, 15-minute foot and shoulder massage, and simple meals with tropical fruits and lemongrass tea. <strong>Day 2:</strong> Release-focused yoga with shoulder openers, lower back massage, and grains with blue vervain tea. <strong>Day 3:</strong> Heart-opening yoga with fish pose, chest massage with rose oil, and beets with hibiscus tea. <strong>Day 4:</strong> Yin yoga for emotional unwinding, craniosacral therapy, and root veggie stew with chamomile tea. <strong>Day 5:</strong> Strength-building yoga with warrior flows, full-body massage, and protein-rich meals with ashwagandha tea. Meals include daily conscious bites and blessings.</p>
+            <h3 data-key="philosophy-yoga-title">Yoga, Massage, and Nutrition</h3>
+            <p data-key="philosophy-yoga-text1"><strong>Day 1:</strong> Gentle grounding yoga with hip release and alternate nostril breathing, 15-minute foot and shoulder massage, and simple meals with tropical fruits and lemongrass tea. <strong>Day 2:</strong> Release-focused yoga with shoulder openers, lower back massage, and grains with blue vervain tea. <strong>Day 3:</strong> Heart-opening yoga with fish pose, chest massage with rose oil, and beets with hibiscus tea. <strong>Day 4:</strong> Yin yoga for emotional unwinding, craniosacral therapy, and root veggie stew with chamomile tea. <strong>Day 5:</strong> Strength-building yoga with warrior flows, full-body massage, and protein-rich meals with ashwagandha tea. Meals include daily conscious bites and blessings.</p>
 
-            <h3>Logistics</h3>
-            <p>Massages occur in morning, midday, and afternoon slots for 3–4 guests with 2 therapists. Yoga uses shaded or ocean-view spaces with props. Nutrition features daily intention chants and phrase cards.</p>
+            <h3 data-key="philosophy-logistics-title">Logistics</h3>
+            <p data-key="philosophy-logistics-text">Massages occur in morning, midday, and afternoon slots for 3–4 guests with 2 therapists. Yoga uses shaded or ocean-view spaces with props. Nutrition features daily intention chants and phrase cards.</p>
         </div>
     </section>
 
     <section id="Sanctuary" class="container">
-        <h2 class="title" style="text-align: center;">Accommodation</h2>
+        <h2 class="title" style="text-align: center;" data-key="sanctuary-title">Accommodation</h2>
 
         <div class="accommodation-grid">
             <div class="accommodation-card">
                 <img src="./pnjeez/photo_2025-07-14_17-41-09.jpg">
-                <h3>Your Private Sanctuary</h3>
-                <p>
+                <h3 data-key="sanctuary-card1-title">Your Private Sanctuary</h3>
+                <p data-key="sanctuary-card1-text">
                     Each guest stays in a private room with a double bed, air conditioning, balcony, 
                     and daily cleaning. White linen, soft textures, and peaceful design help you rest deeply and feel at home.
                 </p>
@@ -203,8 +204,8 @@
 
             <div class="accommodation-card">
                 <img src="./pnjeez/photo_5434066775965823032_y.jpg">
-                <h3>Healing Space</h3>
-                <p>
+                <h3 data-key="sanctuary-card2-title">Healing Space</h3>
+                <p data-key="sanctuary-card2-text">
                     Our retreat center was created to inspire peace and presence. Surrounded by nature and filled with light, 
                     it's a place where you can truly let go, breathe deeply, and feel at home — in your body, and in the world.
                 </p>
@@ -215,65 +216,65 @@
     <section id="pnjeez" class="container icons-grid"> 
         <div class="icon-item">
             <img src="./svjeez/user-check.svg" alt="">
-            <p>24/7 care</p>
+            <p data-key="pnjeez-icon1">24/7 care</p>
         </div>
 
         <div class="icon-item">
             <img src="./svjeez/stethoscope.svg" alt="">
-            <p>Medical team</p>
+            <p data-key="pnjeez-icon2">Medical team</p>
         </div>
 
         <div class="icon-item">
             <img src="./svjeez/hand-heart.svg" alt="">
-            <p>Emotional safety</p>
+            <p data-key="pnjeez-icon3">Emotional safety</p>
         </div>
 
         <div class="icon-item">
             <img src="./svjeez/bowl-food.svg" alt="">
-            <p>Nutrition care</p>
+            <p data-key="pnjeez-icon4">Nutrition care</p>
         </div>
 
         <div class="icon-item">
             <img src="./svjeez/leaf.svg" alt="">
-            <p>Nature walks</p>
+            <p data-key="pnjeez-icon5">Nature walks</p>
         </div>
 
         <div class="icon-item">
             <img src="./svjeez/brain.svg" alt="">
-            <p>Cognitive rehab</p>
+            <p data-key="pnjeez-icon6">Cognitive rehab</p>
         </div>
     </section>
 
     <section id="testimonials" class="testimonials-section">
         <div class="testimonials-header">
-            <h2 class="title">Stories of renewal.</h2>
-            <h3 class="subtitle">See real transformations</h3>
+            <h2 class="title" data-key="testimonials-title">Stories of renewal.</h2>
+            <h3 class="subtitle" data-key="testimonials-subtitle">See real transformations</h3>
         </div>
 
         <div class="testimonials-grid">
             <div class="testimonial-card">
-            <h3>“I felt truly safe and supported here. The atmosphere, care, and daily rituals helped me reconnect with myself in a way I didn’t expect.”</h3>
+            <h3 data-key="testimonial1-text">“I felt truly safe and supported here. The atmosphere, care, and daily rituals helped me reconnect with myself in a way I didn’t expect.”</h3>
             <p class="name">Isabelle</p>
-            <p class="role">France</p>
+            <p class="role" data-key="testimonial1-role">France</p>
             </div>
 
             <div class="testimonial-card">
-            <h3>“Peaceful, beautiful, and deeply grounding. The surroundings and care allowed me to finally exhale and slow down.”</h3>
+            <h3 data-key="testimonial2-text">“Peaceful, beautiful, and deeply grounding. The surroundings and care allowed me to finally exhale and slow down.”</h3>
             <p class="name">George</p>
-            <p class="role">UK</p>
+            <p class="role" data-key="testimonial2-role">UK</p>
             </div>
 
             <div class="testimonial-card">
-            <h3>“Every moment felt intentional and kind. I came feeling overwhelmed and left feeling clear, light, and deeply restored.”</h3>
+            <h3 data-key="testimonial3-text">“Every moment felt intentional and kind. I came feeling overwhelmed and left feeling clear, light, and deeply restored.”</h3>
             <p class="name">Anya</p>
-            <p class="role">Germany</p>
+            <p class="role" data-key="testimonial3-role">Germany</p>
             </div>
         </div>
     </section>
 
     <section id="quote" class="container">
         <div>
-            <h1>“I found peace, new energy, and felt truly cared for. It changed my perspective on aging.”</h1>
+            <h1 data-key="quote-text">“I found peace, new energy, and felt truly cared for. It changed my perspective on aging.”</h1>
             <p>— Mrs. Rosario</p>
         </div>
     </section>
@@ -281,8 +282,8 @@
     <section id="Pricing" class="container flex">
         <div>
             <div class="pricing-section">
-                <h2 class="title">Pricing</h2>
-                <p class="subtitle">All-inclusive.</p>
+                <h2 class="title" data-key="pricing-title">Pricing</h2>
+                <p class="subtitle" data-key="pricing-subtitle">All-inclusive.</p>
               
                 <div class="cards">
                   <!-- 14-Day Retreat -->
@@ -290,17 +291,17 @@
                     <h3>14-Day Retreat</h3>
                     <p class="price">$3,500</p>
                     <ul>
-                      <li>✓ Private room with A/C and balcony</li>
-                      <li>✓ 14 full days of medical supervision</li>
-                      <li>✓ 12–14 full-body therapeutic massages</li>
-                      <li>✓ Aqua aerobics, yoga, morning workouts</li>
-                      <li>✓ Herbal teas & detox smoothies</li>
-                      <li>✓ Full Meals</li>
-                      <li>✓ Joint mobility and breathing exercises</li>
-                      <li>✓ Beach walks, guided meditations</li>
-                      <li>✓ Airport pickup & support</li>
+                      <li data-key="pricing-14day-item1">✓ Private room with A/C and balcony</li>
+                      <li data-key="pricing-14day-item2">✓ 14 full days of medical supervision</li>
+                      <li data-key="pricing-14day-item3">✓ 12–14 full-body therapeutic massages</li>
+                      <li data-key="pricing-14day-item4">✓ Aqua aerobics, yoga, morning workouts</li>
+                      <li data-key="pricing-14day-item5">✓ Herbal teas & detox smoothies</li>
+                      <li data-key="pricing-14day-item6">✓ Full Meals</li>
+                      <li data-key="pricing-14day-item7">✓ Joint mobility and breathing exercises</li>
+                      <li data-key="pricing-14day-item8">✓ Beach walks, guided meditations</li>
+                      <li data-key="pricing-14day-item9">✓ Airport pickup & support</li>
                     </ul>
-                    <a href="https://www.paypal.com/invoice/p/#R6M8YM7CJYMTSZZ7"><button class="btn-price primary">Reserve Your Healing Journey</button></a>
+                    <a href="https://www.paypal.com/invoice/p/#R6M8YM7CJYMTSZZ7"><button class="btn-price primary" data-key="pricing-button">Reserve Your Healing Journey</button></a>
                   </div>
               
                   <!-- 21-Day Retreat -->
@@ -308,29 +309,29 @@
                     <h3>21-Day Retreat</h3>
                     <p class="price">$5,200</p>
                     <ul>
-                      <li>✓ Extended program</li>
-                      <li>✓ Extra week of therapies and recovery</li>
-                      <li>✓ More in-depth work with medical team</li>
-                      <li>✓ Deeper detox and nervous system reset</li>
-                      <li>✓ Greater long-term results</li>
-                      <li>✓ Option to add personal coaching sessions</li>
+                      <li data-key="pricing-21day-item1">✓ Extended program</li>
+                      <li data-key="pricing-21day-item2">✓ Extra week of therapies and recovery</li>
+                      <li data-key="pricing-21day-item3">✓ More in-depth work with medical team</li>
+                      <li data-key="pricing-21day-item4">✓ Deeper detox and nervous system reset</li>
+                      <li data-key="pricing-21day-item5">✓ Greater long-term results</li>
+                      <li data-key="pricing-21day-item6">✓ Option to add personal coaching sessions</li>
                     </ul>
-                    <a href="https://www.paypal.com/invoice/p/#S4N29T82CBQ7RB6P"><button class="btn-price primary">Reserve Your Healing Journey</button></a>
+                    <a href="https://www.paypal.com/invoice/p/#S4N29T82CBQ7RB6P"><button class="btn-price primary" data-key="pricing-button">Reserve Your Healing Journey</button></a>
                   </div>
               
                   <!-- Custom Stay -->
                   <div class="card">
-                    <h3>Custom Stay</h3>
-                    <p class="price">Ask</p>
+                    <h3 data-key="pricing-custom-title">Custom Stay</h3>
+                    <p class="price" data-key="pricing-custom-price">Ask</p>
                     <ul>
-                      <li>✓ Flexible length and dates</li>
-                      <li>✓ Personalized therapy plan</li>
-                      <li>✓ Add family members or caregiver</li>
-                      <li>✓ Choose your own focus (physical / emotional / both)</li>
-                      <li>✓ Direct consultation before booking</li>
-                      <li>✓ Contact us</li>
+                      <li data-key="pricing-custom-item1">✓ Flexible length and dates</li>
+                      <li data-key="pricing-custom-item2">✓ Personalized therapy plan</li>
+                      <li data-key="pricing-custom-item3">✓ Add family members or caregiver</li>
+                      <li data-key="pricing-custom-item4">✓ Choose your own focus (physical / emotional / both)</li>
+                      <li data-key="pricing-custom-item5">✓ Direct consultation before booking</li>
+                      <li data-key="pricing-custom-item6">✓ Contact us</li>
                     </ul>
-                    <button class="btn-price secondary" onclick="location.href='#Contact'">Contact</button>
+                    <button class="btn-price secondary" onclick="location.href='#Contact'" data-key="pricing-contact-button">Contact</button>
                   </div>
                 </div>
               </div>              
@@ -339,38 +340,386 @@
 
     <section id="Contact" class="container contact-container">
         <div class="contact-header">
-            <h2 class="title" style="text-align: center;">Contact Us</h2>
-            <h2 class="subtitle" style="text-align: center;">Share your wishes or questions — our team will respond soon.</h2>
+            <h2 class="title" style="text-align: center;" data-key="contact-title">Contact Us</h2>
+            <h2 class="subtitle" style="text-align: center;" data-key="contact-subtitle">Share your wishes or questions — our team will respond soon.</h2>
         </div>
 
         <form id="contactForm" class="contact-form">
             <div class="form-group">
-                <label for="Name" class="form-label">Name</label>
+                <label for="Name" class="form-label" data-key="contact-name-label">Name</label>
                 <input type="text" placeholder="John Smith" id="Name" name="Name" class="form-input" required>
             </div>
 
             <div class="form-group">
-                <label for="Email" class="form-label">Email</label>
+                <label for="Email" class="form-label" data-key="contact-email-label">Email</label>
                 <input type="email" placeholder="example@gmail.com" id="Email" name="Email" class="form-input" required>
             </div>
 
             <div class="form-group">
-                <label for="Text" class="form-label">Text</label>
+                <label for="Text" class="form-label" data-key="contact-text-label">Text</label>
                 <textarea placeholder="Your Message..." id="Text" name="Text" class="form-input"></textarea>
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn-price secondary submit-button">Submit</button>  
+                <button type="submit" class="btn-price secondary submit-button" data-key="contact-submit">Submit</button>  
             </div>
         </form>
 
         <div id="responseMessage" style="text-align: center; color: green; margin-top: 1rem; display: none;"></div>
-    </div>
+    </section>
+
+    <section id="FAQ" class="faq-section">
+        <h2 class="flex" data-key="faq-title">F.A.Q</h2>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question" data-key="faq-question1">What is included in the retreat program?</button>
+                <div class="faq-answer" data-key="faq-answer1">
+                Your stay includes airport pickup from Puerto Plata, accommodation in a private room with daily cleaning, full access to all healing activities, guided therapy sessions, personalized nutrition, and daily rituals such as tea ceremonies and meditations.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-key="faq-question2">Where is the retreat located?</button>
+                <div class="faq-answer" data-key="faq-answer2">
+                The retreat is located in Cabarete, Dominican Republic—a vibrant, spiritual town known for its golden beaches, creative energy, and warm, welcoming community.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-key="faq-question3">What is your healing philosophy?</button>
+                <div class="faq-answer" data-key="faq-answer3">
+                We combine evidence-based care with natural therapies and emotional support. Our focus is on presence, ethical practices, and creating a nurturing environment where nature, body, and spirit align.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-key="faq-question4">Who will guide the healing sessions?</button>
+                <div class="faq-answer" data-key="faq-answer4">
+                All sessions are led by experienced, licensed therapists who use international medical protocols and personalized care to ensure your safety and well-being.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-key="faq-question5">What kind of accommodation can I expect?</button>
+                <div class="faq-answer" data-key="faq-answer5">
+                You’ll stay in a private room with a double bed, balcony, fresh linens, and soft, calming design. Hygiene, comfort, and peaceful rest are our priorities.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-key="faq-question6">Is this retreat suitable for people going through illness or recovery?</button>
+                <div class="faq-answer" data-key="faq-answer6">
+                Yes. Our program is designed for people who are healing physically, emotionally, or spiritually. We support each guest individually with care and compassion.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-key="faq-question7">How do I book a spot?</button>
+                <div class="faq-answer" data-key="faq-answer7">
+                You can book through our website’s payment section. If you have questions before booking, feel free to contact us—we’re here to guide you.
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <footer id="footer">
+        <div class="logo">
+            <a>Retreat It<sup>®</sup></a>
+        </div>
+        <div class="footer-right">
+            <div class="contact-info">
+                <h4 data-key="footer-contact">Contact</h4>
+                <p>+1 849 517 86 09</p>
+                <p><a href="https://www.instagram.com/dominican_republic_retreat?igsh=bHlvanR5ajJwb2Zt">Instagram</a></p>
+                <p><a href="https://t.me/retriatit">Telegram</a></p>
+                <p>────────────────────</p>
+                <p><address>Emaar Road, Cabarete</address></p>
+                <p><address>Jardin Deportivo, 57000 DR</address></p>
+            </div>
+            <div class="links">
+                <a href="/terms"><h4 data-key="footer-terms">Terms Of Using</h4></a>
+                <p><a href="#Program" data-key="nav-program">Program</a></p>
+                <p><a href="#Philosophy" data-key="nav-philosophy">Philosophy</a></p>
+                <p><a href="#Pricing" data-key="nav-pricing">Pricing</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        document.getElementById('contactForm').addEventListener('submit', async (e) => {
-            e.preventDefault(); // Предотвращаем стандартную отправку формы
+        const translations = {
+            en: {
+                "title": "Healing Retreat in the Dominican Republic | Retreat It",
+                "nav-program": "Program",
+                "nav-philosophy": "Philosophy",
+                "nav-pricing": "Pricing",
+                "nav-start-retreat": "Start Retreat",
+                "hero-title1": "A healing journey.",
+                "hero-title2": "In the heart of the Dominican Republic.",
+                "underheading-text": "Retreat in the heart of the Dominican Republic's most serene beach town. Warmth, healing, and nature meet here. <br><span style='color: #999999;'>Cabarete offers ocean breezes, a gentle pace, and a spiritual atmosphere unlike anywhere else.</span>",
+                "welcome-title": "Atmosphere & Welcome",
+                "welcome-text1": "We will meet you at the Puerto Plata airport and take you to your hotel in the heart of Cabarete. This unique town, vibrant and authentic, draws visitors in with creativity and spiritual energy.",
+                "welcome-text2": "After a restful arrival, you'll experience a meditative tea ceremony at sunset slow down, reflect, and set intentions for your healing journey. The soft sounds of the ocean and warm lights create instant comfort.",
+                "welcome-text3": "Cabarete's essence is felt in its golden beaches, smiling locals, colorful markets, and gentle rhythms. Here, every sunrise sparks renewal and a sense of belonging.",
+                "program-card1-title": "Medical Supervision",
+                "program-card1-text": "Continuous support from certified professionals.",
+                "program-card2-title": "Therapeutic Massage",
+                "program-card2-text": "Full-body sessions tailored to your needs.",
+                "program-card3-title": "Aqua Aerobics",
+                "program-card3-text": "Gentle movement in warm ocean water.",
+                "program-card4-title": "Nutrition & Juices",
+                "program-card4-text": "5 meals a day + herbal teas and fresh juices",
+                "program-card5-title": "Breathing & Joint Work",
+                "program-card5-text": "Improve flexibility and inner calm",
+                "program-card6-title": "Yoga & Morning Movement",
+                "program-card6-text": "Start each day with presence and energy",
+                "program-card7-title": "Dances",
+                "program-card7-text": "Energizing sessions to move, connect, and feel alive.",
+                "program-card8-title": "Tea ceremony",
+                "program-card8-text": "A calming ritual to ground and restore.",
+                "program-card9-title": "Different activities",
+                "program-card9-text": "Daily adventures to spark joy and discovery.",
+                "program-card10-title": "Fantastic Meals",
+                "program-card10-text": "Wholesome dishes made to fuel and delight.",
+                "philosophy-title": "Program",
+                "philosophy-text1": "<strong>Daily Practices (Every Day):</strong> Start each day with 10–15 minutes of gratitude and intention setting, followed by a 5–10 minute candle blessing ritual where you light a candle and speak a word like peace or hope. Engage in 30–40 minutes of gentle breathwork and guided meditation, and end with a 5-minute grounding exercise. Total time: ~1–1.25 hours.",
+                "philosophy-module-title": "Three Core Modules",
+                "philosophy-module1": "<strong>Module 1 (Days 1–5): Letting Go of the Past</strong><br>Focus on releasing emotional burdens, deconstructing identity, exploring ancestral awareness, and honoring body memories through practices tailored for emotional clearing and acceptance.",
+                "philosophy-module2": "<strong>Module 2 (Days 6–10): The Sacred Middle</strong><br>Reconnect with your inner voice, build self-worth, rewrite internal narratives, and cultivate compassion for your past selves, emphasizing healing and integration.",
+                "philosophy-module3": "<strong>Module 3 (Days 11–14): Becoming the Living Prayer</strong><br>Live intentionally, anchor spiritually, design your post-retreat life, and participate in a final integration and legacy ritual to embody renewal.",
+                "philosophy-module1-details": "Module 1 Details: Letting Go of the Past",
+                "philosophy-module1-text": "Designed for ages 50+, this module uses gentle meditation, breathwork, and energy practices to reduce stress, reconnect with body and spirit, awaken intuitive clarity, and foster inner connection over 14 days.",
+                "philosophy-day1-title": "Day 1: Welcome & Assessment",
+                "philosophy-day1-text": "Arrive in the late afternoon for a 45-minute opening circle to meet facilitators and journal on questions like “What brought me here?” and “What do I want to let go of?” Follow with a 20-minute seated body scan and diaphragmatic breathing, and close with a 15-minute candle blessing ritual, sharing one word like clarity or hope.",
+                "philosophy-daily-title": "Daily Practice",
+                "philosophy-daily-text": "<strong>Morning Flow (60 min):</strong> Begin with a 5-minute arrival ritual (bell or essential oil), followed by 10 minutes of seated breathwork (diaphragmatic, box, or ocean breath), 15 minutes of guided visualization, 15 minutes of gentle movements like shoulder rotations or standing sways, 10 minutes of sound activation (toning like OM), and 5 minutes to share a closing word. <strong>Evening Practice (30–40 min):</strong> Includes 10 minutes of stillness meditation, 5 minutes of body gratitude (“Thank you heart…”), 10 minutes of mantra or whisper prayer, and optional candle gazing or star reflection. Practices adapt for limited mobility, emotional sensitivity, or spiritual openness, using tools like chairs, breathwork cards, essential oils, journals, candles, and ambient music. Morning sessions are outdoors; evenings are indoors with candles.",
+                "philosophy-day2-title": "Day 2: Releasing the Emotional Dust",
+                "philosophy-day2-text": "Spend 1.5 hours in the morning with gratitude, gentle movement, breath alignment, a “Washing the Window of the Heart” visualization, a candle blessing naming fears, and silent mantra reflection. Take a 30-minute mid-morning walk with herbal tea, discussing what silence revealed. Engage in a 75-minute psychotherapy activity, “Emotional Timeline Mapping,” where you draw a timeline of emotional highs and lows, share in pairs, and affirm, “I honor all my seasons.” Optionally, end with a 15-minute aroma ritual using frankincense or lavender. Evening suggestions include a sound bath or stargazing. Total time: ~4.5 hours.",
+                "philosophy-day3-title": "Day 3: The Wisdom of the Heart",
+                "philosophy-day3-text": "Begin with a 90-minute morning session: 15-minute gratitude circle, 10-minute heart-centered breathwork, 25-minute “House of the Heart” meditation, 10-minute self-love candle blessing, and 20-minute journaling on heart messages, with optional sharing. Mid-morning, write a 30-minute letter to your 14-year-old self. In a 75–90 minute psychospiritual session, explore “The Guesthouse” theme with somatic awareness, an “Emotion Stones” ritual choosing a stone to represent your emotion, and optional pair sharing. Evening includes a 30-minute wind-down with music, mantra, and dream journaling. Adaptive care addresses overwhelm, numbness, vivid memories, or joy with tailored responses like private check-ins or altar tasks. Total time: ~4.25 hours.",
+                "philosophy-day4-title": "Day 4: The Grief Garden",
+                "philosophy-day4-text": "Honor grief in a 90-minute morning session with a gratitude circle, 10-minute breath of release, 25-minute “Garden of Grief” meditation, 20-minute journaling, and 10-minute silent hand-on-heart moment. Mid-morning, join a 60–75 minute “Grief Garden Ritual” outdoors, naming grief, lighting candles, and adding salt to water for shared healing. In a 75–90 minute session, write letters for “I Never Said Goodbye” to address unspoken grief, share in small groups, and complete with an embodied exercise. Evening offers a 30–40 minute wind-down with music, a “Final Goodbye” whisper ritual, and take-home grief prayer cards. Adaptive responses support emotional release, withdrawal, anger, or joy. Total time: ~4.25 hours.",
+                "philosophy-day5-title": "Day 5: Inner Reconciliation",
+                "philosophy-day5-text": "Make peace with your past in a 90-minute morning session: gratitude circle, 20-minute Ho’oponopono breathwork with your inner child, 25-minute “Mirror Within” meditation, 20-minute journaling on blamed parts of self, and 10-minute sharing circle. Mid-morning, perform a 60–75 minute “Returning the Blame” ritual, burning letters of shame and placing petals in water. In a 75–90 minute session, explore “The Soft Animal of the Body” with somatic awareness, self-compassion mapping, micro-sharing, and a whisper vow ritual. Evening includes a 30–45 minute gratitude walk, circle chant, and dream journaling. Adaptive care supports unforgiveness, doubt, peace, or physical sensations. Total time: ~4.5 hours.",
+                "philosophy-yoga-title": "Yoga, Massage, and Nutrition",
+                "philosophy-yoga-text1": "<strong>Day 1:</strong> Gentle grounding yoga with hip release and alternate nostril breathing, 15-minute foot and shoulder massage, and simple meals with tropical fruits and lemongrass tea. <strong>Day 2:</strong> Release-focused yoga with shoulder openers, lower back massage, and grains with blue vervain tea. <strong>Day 3:</strong> Heart-opening yoga with fish pose, chest massage with rose oil, and beets with hibiscus tea. <strong>Day 4:</strong> Yin yoga for emotional unwinding, craniosacral therapy, and root veggie stew with chamomile tea. <strong>Day 5:</strong> Strength-building yoga with warrior flows, full-body massage, and protein-rich meals with ashwagandha tea. Meals include daily conscious bites and blessings.",
+                "philosophy-logistics-title": "Logistics",
+                "philosophy-logistics-text": "Massages occur in morning, midday, and afternoon slots for 3–4 guests with 2 therapists. Yoga uses shaded or ocean-view spaces with props. Nutrition features daily intention chants and phrase cards.",
+                "sanctuary-title": "Accommodation",
+                "sanctuary-card1-title": "Your Private Sanctuary",
+                "sanctuary-card1-text": "Each guest stays in a private room with a double bed, air conditioning, balcony, and daily cleaning. White linen, soft textures, and peaceful design help you rest deeply and feel at home.",
+                "sanctuary-card2-title": "Healing Space",
+                "sanctuary-card2-text": "Our retreat center was created to inspire peace and presence. Surrounded by nature and filled with light, it's a place where you can truly let go, breathe deeply, and feel at home — in your body, and in the world.",
+                "pnjeez-icon1": "24/7 care",
+                "pnjeez-icon2": "Medical team",
+                "pnjeez-icon3": "Emotional safety",
+                "pnjeez-icon4": "Nutrition care",
+                "pnjeez-icon5": "Nature walks",
+                "pnjeez-icon6": "Cognitive rehab",
+                "testimonials-title": "Stories of renewal.",
+                "testimonials-subtitle": "See real transformations",
+                "testimonial1-text": "“I felt truly safe and supported here. The atmosphere, care, and daily rituals helped me reconnect with myself in a way I didn’t expect.”",
+                "testimonial1-role": "France",
+                "testimonial2-text": "“Peaceful, beautiful, and deeply grounding. The surroundings and care allowed me to finally exhale and slow down.”",
+                "testimonial2-role": "UK",
+                "testimonial3-text": "“Every moment felt intentional and kind. I came feeling overwhelmed and left feeling clear, light, and deeply restored.”",
+                "testimonial3-role": "Germany",
+                "quote-text": "“I found peace, new energy, and felt truly cared for. It changed my perspective on aging.”",
+                "pricing-title": "Pricing",
+                "pricing-subtitle": "All-inclusive.",
+                "pricing-14day-item1": "✓ Private room with A/C and balcony",
+                "pricing-14day-item2": "✓ 14 full days of medical supervision",
+                "pricing-14day-item3": "✓ 12–14 full-body therapeutic massages",
+                "pricing-14day-item4": "✓ Aqua aerobics, yoga, morning workouts",
+                "pricing-14day-item5": "✓ Herbal teas & detox smoothies",
+                "pricing-14day-item6": "✓ Full Meals",
+                "pricing-14day-item7": "✓ Joint mobility and breathing exercises",
+                "pricing-14day-item8": "✓ Beach walks, guided meditations",
+                "pricing-14day-item9": "✓ Airport pickup & support",
+                "pricing-21day-item1": "✓ Extended program",
+                "pricing-21day-item2": "✓ Extra week of therapies and recovery",
+                "pricing-21day-item3": "✓ More in-depth work with medical team",
+                "pricing-21day-item4": "✓ Deeper detox and nervous system reset",
+                "pricing-21day-item5": "✓ Greater long-term results",
+                "pricing-21day-item6": "✓ Option to add personal coaching sessions",
+                "pricing-custom-title": "Custom Stay",
+                "pricing-custom-price": "Ask",
+                "pricing-custom-item1": "✓ Flexible length and dates",
+                "pricing-custom-item2": "✓ Personalized therapy plan",
+                "pricing-custom-item3": "✓ Add family members or caregiver",
+                "pricing-custom-item4": "✓ Choose your own focus (physical / emotional / both)",
+                "pricing-custom-item5": "✓ Direct consultation before booking",
+                "pricing-custom-item6": "✓ Contact us",
+                "pricing-button": "Reserve Your Healing Journey",
+                "pricing-contact-button": "Contact",
+                "contact-title": "Contact Us",
+                "contact-subtitle": "Share your wishes or questions — our team will respond soon.",
+                "contact-name-label": "Name",
+                "contact-email-label": "Email",
+                "contact-text-label": "Text",
+                "contact-submit": "Submit",
+                "faq-title": "F.A.Q",
+                "faq-question1": "What is included in the retreat program?",
+                "faq-answer1": "Your stay includes airport pickup from Puerto Plata, accommodation in a private room with daily cleaning, full access to all healing activities, guided therapy sessions, personalized nutrition, and daily rituals such as tea ceremonies and meditations.",
+                "faq-question2": "Where is the retreat located?",
+                "faq-answer2": "The retreat is located in Cabarete, Dominican Republic—a vibrant, spiritual town known for its golden beaches, creative energy, and warm, welcoming community.",
+                "faq-question3": "What is your healing philosophy?",
+                "faq-answer3": "We combine evidence-based care with natural therapies and emotional support. Our focus is on presence, ethical practices, and creating a nurturing environment where nature, body, and spirit align.",
+                "faq-question4": "Who will guide the healing sessions?",
+                "faq-answer4": "All sessions are led by experienced, licensed therapists who use international medical protocols and personalized care to ensure your safety and well-being.",
+                "faq-question5": "What kind of accommodation can I expect?",
+                "faq-answer5": "You’ll stay in a private room with a double bed, balcony, fresh linens, and soft, calming design. Hygiene, comfort, and peaceful rest are our priorities.",
+                "faq-question6": "Is this retreat suitable for people going through illness or recovery?",
+                "faq-answer6": "Yes. Our program is designed for people who are healing physically, emotionally, or spiritually. We support each guest individually with care and compassion.",
+                "faq-question7": "How do I book a spot?",
+                "faq-answer7": "You can book through our website’s payment section. If you have questions before booking, feel free to contact us—we’re here to guide you."
+            },
+            ru: {
+                "title": "Оздоровительный ретрит в Доминиканской Республике | Retreat It",
+                "nav-program": "Программа",
+                "nav-philosophy": "Философия",
+                "nav-pricing": "Цены",
+                "nav-start-retreat": "Начать ретрит",
+                "hero-title1": "Путешествие к исцелению.",
+                "hero-title2": "В сердце Доминиканской Республики.",
+                "underheading-text": "Ретрит в самом сердце самого спокойного пляжного города Доминиканской Республики. Тепло, исцеление и природа встречаются здесь. <br><span style='color: #999999;'>Кабарете предлагает морской бриз, неспешный ритм и духовную атмосферу, не похожую ни на что другое.</span>",
+                "welcome-title": "Атмосфера и приветствие",
+                "welcome-text1": "Мы встретим вас в аэропорту Пуэрто-Плата и отвезем в ваш отель в самом сердце Кабарете. Этот уникальный город, яркий и аутентичный, привлекает посетителей своей креативностью и духовной энергией.",
+                "welcome-text2": "После спокойного прибытия вы примете участие в медитативной чайной церемонии на закате, чтобы замедлиться, поразмышлять и установить намерения для вашего путешествия к исцелению. Мягкие звуки океана и теплый свет создают мгновенный комфорт.",
+                "welcome-text3": "Сущность Кабарете ощущается в его золотых пляжах, улыбающихся местных жителях, красочных рынках и мягких ритмах. Здесь каждый восход солнца пробуждает обновление и чувство принадлежности.",
+                "program-card1-title": "Медицинское наблюдение",
+                "program-card1-text": "Постоянная поддержка сертифицированных специалистов.",
+                "program-card2-title": "Терапевтический массаж",
+                "program-card2-text": "Сеансы массажа всего тела, адаптированные к вашим потребностям.",
+                "program-card3-title": "Аквааэробика",
+                "program-card3-text": "Мягкие движения в теплой океанской воде.",
+                "program-card4-title": "Питание и соки",
+                "program-card4-text": "5 приемов пищи в день + травяные чаи и свежие соки",
+                "program-card5-title": "Дыхательные практики и работа с суставами",
+                "program-card5-text": "Улучшение гибкости и внутреннего спокойствия",
+                "program-card6-title": "Йога и утренние движения",
+                "program-card6-text": "Начинайте каждый день с присутствия и энергии",
+                "program-card7-title": "Танцы",
+                "program-card7-text": "Энергичные сеансы для движения, связи и ощущения жизни.",
+                "program-card8-title": "Чайная церемония",
+                "program-card8-text": "Успокаивающий ритуал для заземления и восстановления.",
+                "program-card9-title": "Разнообразные активности",
+                "program-card9-text": "Ежедневные приключения для радости и открытий.",
+                "program-card10-title": "Замечательные блюда",
+                "program-card10-text": "Полезные блюда, созданные для подпитки и удовольствия.",
+                "philosophy-title": "Программа",
+                "philosophy-text1": "<strong>Ежедневные практики (каждый день):</strong> Начинайте каждый день с 10–15 минут благодарности и постановки намерений, затем 5–10 минут ритуала благословения свечи, где вы зажигаете свечу и произносите слово, например, мир или надежда. Занимайтесь 30–40 минут мягкими дыхательными практиками и управляемой медитацией, и завершайте 5-минутным упражнением на заземление. Общее время: ~1–1,25 часа.",
+                "philosophy-module-title": "Три основных модуля",
+                "philosophy-module1": "<strong>Модуль 1 (Дни 1–5): Отпускание прошлого</strong><br>Сосредоточьтесь на освобождении от эмоциональных бремен, деконструкции идентичности, исследовании родового сознания и уважении воспоминаний тела через практики, направленные на эмоциональное очищение и принятие.",
+                "philosophy-module2": "<strong>Модуль 2 (Дни 6–10): Священная середина</strong><br>Воссоединитесь со своим внутренним голосом, укрепите самооценку, перепишите внутренние повествования и развивайте сострадание к своим прошлым «я», акцентируя внимание на исцелении и интеграции.",
+                "philosophy-module3": "<strong>Модуль 3 (Дни 11–14): Стань живой молитвой</strong><br>Живите осознанно, закрепляйтесь духовно, проектируйте свою жизнь после ретрита и участвуйте в финальном ритуале интеграции и наследия, чтобы воплотить обновление.",
+                "philosophy-module1-details": "Детали модуля 1: Отпускание прошлого",
+                "philosophy-module1-text": "Разработан для людей старше 50 лет, этот модуль использует мягкую медитацию, дыхательные практики и энергетические упражнения для снижения стресса, воссоединения с телом и духом, пробуждения интуитивной ясности и укрепления внутренней связи за 14 дней.",
+                "philosophy-day1-title": "День 1: Приветствие и оценка",
+                "philosophy-day1-text": "Прибудьте во второй половине дня на 45-минутный открывающий круг, чтобы познакомиться с ведущими и записать в дневник ответы на вопросы, такие как «Что привело меня сюда?» и «От чего я хочу избавиться?». Затем 20-минутное сидячее сканирование тела и диафрагмальное дыхание, завершение 15-минутным ритуалом благословения свечи, где вы делитесь словом, например, ясность или надежда.",
+                "philosophy-daily-title": "Ежедневная практика",
+                "philosophy-daily-text": "<strong>Утренний поток (60 мин):</strong> Начинайте с 5-минутного ритуала прибытия (колокольчик или эфирное масло), затем 10 минут сидячих дыхательных практик (диафрагмальное, коробочное или океанское дыхание), 15 минут управляемой визуализации, 15 минут мягких движений, таких как вращения плечами или стоячие покачивания, 10 минут звуковой активации (тонирование, например, ОМ), и 5 минут для произнесения заключительного слова. <strong>Вечерняя практика (30–40 мин):</strong> Включает 10 минут медитации в тишине, 5 минут благодарности телу («Спасибо, сердце…»), 10 минут мантры или шепотной молитвы и необязательное созерцание свечи или отражение под звездами. Практики адаптируются для ограниченной подвижности, эмоциональной чувствительности или духовной открытости с использованием инструментов, таких как стулья, карты дыхательных практик, эфирные масла, дневники, свечи и фоновая музыка. Утренние сессии проходят на открытом воздухе; вечерние — в помещении со свечами.",
+                "philosophy-day2-title": "День 2: Освобождение от эмоциональной пыли",
+                "philosophy-day2-text": "Проведите 1,5 часа утром с благодарностью, мягкими движениями, выравниванием дыхания, визуализацией «Омывание окна сердца», благословением свечи с называнием страхов и молчаливым размышлением над мантрой. Совершите 30-минутную прогулку в середине утра с травяным чаем, обсуждая, что открыла тишина. Участвуйте в 75-минутной психотерапевтической активности «Эмоциональное картирование времени», где вы рисуете хронологию эмоциональных взлетов и падений, делитесь в парах и утверждаете: «Я чту все свои сезоны». По желанию, завершите 15-минутным ритуалом с ароматом ладана или лаванды. Вечерние предложения включают звуковую ванну или наблюдение за звездами. Общее время: ~4,5 часа.",
+                "philosophy-day3-title": "День 3: Мудрость сердца",
+                "philosophy-day3-text": "Начните с 90-минутной утренней сессии: 15-минутный круг благодарности, 10-минутное дыхание, сосредоточенное на сердце, 25-минутная медитация «Дом сердца», 10-минутное благословение свечи для любви к себе и 20-минутное ведение дневника о посланиях сердца с возможным обсуждением. В середине утра напишите 30-минутное письмо своему 14-летнему «я». В 75–90-минутной психодуховной сессии исследуйте тему «Гостевой дом» с соматическим осознанием, ритуалом «Эмоциональные камни», выбирая камень для представления вашей эмоции, и необязательным обсуждением в парах. Вечер включает 30-минутное расслабление с музыкой, мантрой и ведением дневника снов. Адаптивная забота учитывает подавленность, онемение, яркие воспоминания или радость с индивидуальными ответами, такими как личные беседы или задания у алтаря. Общее время: ~4,25 часа.",
+                "philosophy-day4-title": "День 4: Сад скорби",
+                "philosophy-day4-text": "Чтите скорбь в 90-минутной утренней сессии с кругом благодарности, 10-минутным дыханием освобождения, 25-минутной медитацией «Сад скорби», 20-минутным ведением дневника и 10-минутным молчаливым моментом с рукой на сердце. В середине утра присоединяйтесь к 60–75-минутному «Ритуалу сада скорби» на открытом воздухе, называя скорбь, зажигая свечи и добавляя соль в воду для общего исцеления. В 75–90-минутной сессии пишите письма для «Я никогда не прощался», чтобы выразить невысказанную скорбь, делитесь в малых группах и завершайте воплощенным упражнением. Вечер предлагает 30–40-минутное расслабление с музыкой, ритуалом шепотного «Последнего прощания» и карточками молитвы о скорби для дома. Адаптивные ответы поддерживают эмоциональное освобождение, уход в себя, гнев или радость. Общее время: ~4,25 часа.",
+                "philosophy-day5-title": "День 5: Внутреннее примирение",
+                "philosophy-day5-text": "Примиритесь с прошлым в 90-минутной утренней сессии: круг благодарности, 20-минутное дыхание Хо’опонопоно с вашим внутренним ребенком, 25-минутная медитация «Зеркало внутри», 20-минутное ведение дневника о винимых частях себя и 10-минутный круг обсуждения. В середине утра проведите 60–75-минутный ритуал «Возвращение вины», сжигая письма о стыде и помещая лепестки в воду. В 75–90-минутной сессии исследуйте «Мягкое животное тела» с соматическим осознанием, картой самосострадания, микро-обсуждением и ритуалом шепотной клятвы. Вечер включает 30–45-минутную прогулку благодарности, хоровое пение и ведение дневника снов. Адаптивная забота поддерживает непрощение, сомнения, мир или физические ощущения. Общее время: ~4,5 часа.",
+                "philosophy-yoga-title": "Йога, массаж и питание",
+                "philosophy-yoga-text1": "<strong>День 1:</strong> Мягкая заземляющая йога с освобождением бедер и дыханием через разные ноздри, 15-минутный массаж стоп и плеч, простые блюда с тропическими фруктами и чаем из лемонграсса. <strong>День 2:</strong> Йога, направленная на освобождение, с открытием плеч, массаж поясницы и зерновые с чаем из голубой вербены. <strong>День 3:</strong> Йога, открывающая сердце, с позой рыбы, массаж груди с розовым маслом и свекла с чаем из гибискуса. <strong>День 4:</strong> Инь-йога для эмоционального расслабления, краниосакральная терапия и тушеные корнеплоды с чаем из ромашки. <strong>День 5:</strong> Йога для укрепления силы с потоками воина, массаж всего тела и белковые блюда с чаем из ашвагандхи. Блюда включают ежедневные осознанные кусочки и благословения.",
+                "philosophy-logistics-title": "Логистика",
+                "philosophy-logistics-text": "Массажи проводятся утром, в полдень и после обеда для 3–4 гостей с 2 терапевтами. Йога проводится в затененных местах или с видом на океан с использованием реквизита. Питание включает ежедневные песнопения намерений и карточки с фразами.",
+                "sanctuary-title": "Проживание",
+                "sanctuary-card1-title": "Ваше личное убежище",
+                "sanctuary-card1-text": "Каждый гость размещается в отдельной комнате с двуспальной кроватью, кондиционером, балконом и ежедневной уборкой. Белое белье, мягкие текстуры и спокойный дизайн помогают глубоко отдохнуть и почувствовать себя как дома.",
+                "sanctuary-card2-title": "Исцеляющее пространство",
+                "sanctuary-card2-text": "Наш ретритный центр создан, чтобы вдохновлять на мир и присутствие. Окруженный природой и наполненный светом, это место, где вы можете по-настоящему отпустить, глубоко дышать и чувствовать себя как дома — в своем теле и в мире.",
+                "pnjeez-icon1": "Круглосуточная забота",
+                "pnjeez-icon2": "Медицинская команда",
+                "pnjeez-icon3": "Эмоциональная безопасность",
+                "pnjeez-icon4": "Забота о питании",
+                "pnjeez-icon5": "Прогулки на природе",
+                "pnjeez-icon6": "Когнитивная реабилитация",
+                "testimonials-title": "Истории обновления.",
+                "testimonials-subtitle": "Посмотрите настоящие трансформации",
+                "testimonial1-text": "«Я чувствовал себя по-настоящему в безопасности и поддержке здесь. Атмосфера, забота и ежедневные ритуалы помогли мне вновь соединиться с собой так, как я не ожидал.»",
+                "testimonial1-role": "Франция",
+                "testimonial2-text": "«Мирно, красиво и глубоко заземляюще. Окружение и забота позволили мне наконец выдохнуть и замедлиться.»",
+                "testimonial2-role": "Великобритания",
+                "testimonial3-text": "«Каждый момент ощущался намеренным и добрым. Я приехал с чувством подавленности и уехал с ясностью, легкостью и глубоким восстановлением.»",
+                "testimonial3-role": "Германия",
+                "quote-text": "«Я нашел покой, новую энергию и почувствовал настоящую заботу. Это изменило мое восприятие старения.»",
+                "pricing-title": "Цены",
+                "pricing-subtitle": "Все включено.",
+                "pricing-14day-item1": "✓ Отдельная комната с кондиционером и балконом",
+                "pricing-14day-item2": "✓ 14 полных дней медицинского наблюдения",
+                "pricing-14day-item3": "✓ 12–14 сеансов массажа всего тела",
+                "pricing-14day-item4": "✓ Аквааэробика, йога, утренние тренировки",
+                "pricing-14day-item5": "✓ Травяные чаи и детокс-смузи",
+                "pricing-14day-item6": "✓ Полное питание",
+                "pricing-14day-item7": "✓ Упражнения для подвижности суставов и дыхания",
+                "pricing-14day-item8": "✓ Прогулки по пляжу, управляемые медитации",
+                "pricing-14day-item9": "✓ Трансфер из аэропорта и поддержка",
+                "pricing-21day-item1": "✓ Расширенная программа",
+                "pricing-21day-item2": "✓ Дополнительная неделя терапии и восстановления",
+                "pricing-21day-item3": "✓ Более глубокая работа с медицинской командой",
+                "pricing-21day-item4": "✓ Глубокий детокс и перезагрузка нервной системы",
+                "pricing-21day-item5": "✓ Более значительные долгосрочные результаты",
+                "pricing-21day-item6": "✓ Возможность добавить персональные коучинговые сессии",
+                "pricing-custom-title": "Индивидуальное пребывание",
+                "pricing-custom-price": "Уточняйте",
+                "pricing-custom-item1": "✓ Гибкая продолжительность и даты",
+                "pricing-custom-item2": "✓ Персонализированный план терапии",
+                "pricing-custom-item3": "✓ Возможность добавить членов семьи или опекуна",
+                "pricing-custom-item4": "✓ Выберите свой фокус (физический / эмоциональный / оба)",
+                "pricing-custom-item5": "✓ Прямая консультация перед бронированием",
+                "pricing-custom-item6": "✓ Свяжитесь с нами",
+                "pricing-button": "Забронировать ваше путешествие к исцелению",
+                "pricing-contact-button": "Связаться",
+                "contact-title": "Свяжитесь с нами",
+                "contact-subtitle": "Поделитесь своими пожеланиями или вопросами — наша команда скоро ответит.",
+                "contact-name-label": "Имя",
+                "contact-email-label": "Электронная почта",
+                "contact-text-label": "Сообщение",
+                "contact-submit": "Отправить",
+                "faq-title": "Часто задаваемые вопросы",
+                "faq-question1": "Что включено в программу ретрита?",
+                "faq-answer1": "В ваше пребывание входит трансфер из аэропорта Пуэрто-Плата, проживание в отдельной комнате с ежедневной уборкой, полный доступ ко всем оздоровительным мероприятиям, сеансам управляемой терапии, персонализированному питанию и ежедневным ритуалам, таким как чайные церемонии и медитации.",
+                "faq-question2": "Где находится ретрит?",
+                "faq-answer2": "Ретрит расположен в Кабарете, Доминиканская Республика — ярком, духовном городе, известном своими золотыми пляжами, творческой энергией и теплым, гостеприимным сообществом.",
+                "faq-question3": "Какова ваша философия исцеления?",
+                "faq-answer3": "Мы сочетаем научно обоснованную заботу с естественными терапиями и эмоциональной поддержкой. Наш фокус — на присутствии, этичных практиках и создании питательной среды, где природа, тело и дух гармонируют.",
+                "faq-question4": "Кто будет проводить оздоровительные сеансы?",
+                "faq-answer4": "Все сеансы проводят опытные лицензированные терапевты, которые используют международные медицинские протоколы и персонализированную заботу для обеспечения вашей безопасности и благополучия.",
+                "faq-question5": "Какое проживание я могу ожидать?",
+                "faq-answer5": "Вы будете проживать в отдельной комнате с двуспальной кроватью, балконом, свежим бельем и мягким, успокаивающим дизайном. Гигиена, комфорт и спокойный отдых — наши приоритеты.",
+                "faq-question6": "Подходит ли этот ретрит для людей, проходящих через болезнь или восстановление?",
+                "faq-answer6": "Да. Наша программа разработана для людей, которые исцеляются физически, эмоционально или духовно. Мы поддерживаем каждого гостя индивидуально с заботой и состраданием.",
+                "faq-question7": "Как забронировать место?",
+                "faq-answer7": "Вы можете забронировать через раздел оплаты на нашем сайте. Если у вас есть вопросы перед бронированием, не стесняйтесь связаться с нами — мы здесь, чтобы помочь вам."
+            }
+        };
 
+        let currentLanguage = 'en';
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'ru' : 'en';
+            document.getElementById('language-toggle').textContent = currentLanguage === 'en' ? 'EN/RU' : 'RU/EN';
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLanguage][key]) {
+                    element.innerHTML = translations[currentLanguage][key];
+                }
+            });
+            document.documentElement.lang = currentLanguage;
+        }
+
+        document.getElementById('language-toggle').addEventListener('click', toggleLanguage);
+
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
             const form = e.target;
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
@@ -389,7 +738,7 @@
                 if (result.success) {
                     document.getElementById('responseMessage').textContent = result.message;
                     document.getElementById('responseMessage').style.display = 'block';
-                    form.reset(); // Сбрасываем форму
+                    form.reset();
                 } else {
                     document.getElementById('responseMessage').textContent = 'Error: ' + (result.error || 'Unknown error');
                     document.getElementById('responseMessage').style.color = 'red';
@@ -401,93 +750,13 @@
                 document.getElementById('responseMessage').style.display = 'block';
             }
         });
-    </script>
 
-    <section id="FAQ" class="faq-section">
-        <h2 class="flex">F.A.Q</h2>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">What is included in the retreat program?</button>
-                <div class="faq-answer">
-                Your stay includes airport pickup from Puerto Plata, accommodation in a private room with daily cleaning, full access to all healing activities, guided therapy sessions, personalized nutrition, and daily rituals such as tea ceremonies and meditations.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Where is the retreat located?</button>
-                <div class="faq-answer">
-                The retreat is located in Cabarete, Dominican Republic—a vibrant, spiritual town known for its golden beaches, creative energy, and warm, welcoming community.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">What is your healing philosophy?</button>
-                <div class="faq-answer">
-                We combine evidence-based care with natural therapies and emotional support. Our focus is on presence, ethical practices, and creating a nurturing environment where nature, body, and spirit align.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Who will guide the healing sessions?</button>
-                <div class="faq-answer">
-                All sessions are led by experienced, licensed therapists who use international medical protocols and personalized care to ensure your safety and well-being.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">What kind of accommodation can I expect?</button>
-                <div class="faq-answer">
-                You’ll stay in a private room with a double bed, balcony, fresh linens, and soft, calming design. Hygiene, comfort, and peaceful rest are our priorities.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Is this retreat suitable for people going through illness or recovery?</button>
-                <div class="faq-answer">
-                Yes. Our program is designed for people who are healing physically, emotionally, or spiritually. We support each guest individually with care and compassion.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">How do I book a spot?</button>
-                <div class="faq-answer">
-                You can book through our website’s payment section. If you have questions before booking, feel free to contact us—we’re here to guide you.
-                </div>
-            </div>
-        </div> 
-    </section>
-
-
-    <footer id="footer">
-        <div class="logo">
-            <a>Retreat It<sup>®</sup></a>
-        </div>
-        <div class="footer-right">
-            <div class="contact-info">
-                <h4>Contact</h4>
-                <p>+1 849 517 86 09</p>
-                <p><a href="https://www.instagram.com/dominican_republic_retreat?igsh=bHlvanR5ajJwb2Zt">Instagram</a></p>
-                <p><a href="https://t.me/retriatit">Telegram</a></p>
-                <p>────────────────────</p>
-                <p><address>Emaar Road, Cabarete</address></p>
-                <p><address>Jardin Deportivo, 57000 DR</address></p>
-            </div>
-            <div class="links">
-                <a href="/terms"><h4>Terms Of Using</h4></a>
-                <p><a href="#Program">Program</a></p>
-                <p><a href="#Philosophy">Philosophy</a></p>
-                <p><a href="#Pricing">Pricing</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // FAQ toggle
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const item = button.parentElement;
-                item.classList.toggle('active');
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const item = button.parentElement;
+                    item.classList.toggle('active');
+                });
             });
         });
     </script>
