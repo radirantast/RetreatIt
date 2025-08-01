@@ -251,11 +251,71 @@ html {
     margin-bottom: 4rem;
 }
 
-.accommodation-card img {
+.accommodation-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem 5rem;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.accommodation-card {
+    position: relative;
+    max-width: 470px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 470px;
+    height: 470px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel img {
     width: 470px;
     height: 470px;
     object-fit: cover;
-    border-radius: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
+}
+
+.carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-arrow.hidden {
+    display: none;
 }
 
 .accommodation-card h3 {
@@ -270,14 +330,6 @@ html {
     line-height: 1.2em;
     font-weight: 500;
     max-width: 400px;
-}
-
-.accommodation-grid {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem 5rem;
-    justify-content: center;
-    padding: 4rem 2rem;
 }
 
 /* Beach image */
@@ -802,10 +854,32 @@ html {
         padding: 2rem 1rem;
     }
 
-    .accommodation-card img {
+    .accommodation-card {
+        max-width: 100%;
+    }
+
+    .carousel-container {
         width: 100%;
         height: 300px;
-        object-fit: cover;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .carousel-arrow {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .accommodation-card h3 {
+        font-size: 20px;
+    }
+
+    .accommodation-card p {
+        font-size: 18px;
+        max-width: 100%;
     }
 
     .beach-image {
@@ -1022,8 +1096,31 @@ html {
         margin-bottom: 1.5rem;
     }
 
-    .accommodation-card img {
+    .carousel-container {
+        width: 100%;
         height: 200px;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .carousel-arrow {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .carousel-arrow.hidden {
+        display: none;
+    }
+
+    .accommodation-card h3 {
+        font-size: 18px;
+    }
+
+    .accommodation-card p {
+        font-size: 16px;
     }
 
     #pnjeez {
@@ -1262,16 +1359,27 @@ html {
         margin-bottom: 1rem;
     }
 
-    .accommodation-grid {
-        padding: 2rem 1rem;
-    }
-
-    .accommodation-card img {
+    .carousel-container {
+        width: 100%;
         height: 150px;
     }
 
+    .carousel img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .carousel-arrow {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .carousel-arrow.hidden {
+        display: none;
+    }
+
     .accommodation-card h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .accommodation-card p {

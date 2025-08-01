@@ -205,7 +205,16 @@
 
         <div class="accommodation-grid">
             <div class="accommodation-card">
-                <img src="./pnjeez/photo_2025-07-14_17-41-09.jpg" alt="Private room with double bed and balcony" loading="lazy">
+                <div class="carousel-container" data-carousel>
+                    <div class="carousel">
+                        <img src="./pnjeez/photo_2025-07-14_17-41-09.jpg" alt="Private room with double bed and balcony" loading="lazy">
+                        <img src="./pnjeez/photo_2_2025-08-01_20-21-56.jpg" alt="Private room interior" loading="lazy">
+                        <img src="./pnjeez/photo_3_2025-08-01_20-21-56.jpg" alt="Balcony view" loading="lazy">
+                        <img src="./pnjeez/photo_7_2025-08-01_20-21-56.jpg" alt="Balcony view" loading="lazy">
+                    </div>
+                    <button class="carousel-arrow left" aria-label="Previous image">&#10094;</button>
+                    <button class="carousel-arrow right" aria-label="Next image">&#10095;</button>
+                </div>
                 <h3 data-key="sanctuary-card1-title">Your Private Sanctuary</h3>
                 <p data-key="sanctuary-card1-text">
                     Each guest stays in a private room with a double bed, air conditioning, balcony, 
@@ -214,7 +223,17 @@
             </div>
 
             <div class="accommodation-card">
-                <img src="./pnjeez/photo_5434066775965823032_y.jpg" alt="Healing retreat center surrounded by nature" loading="lazy">
+                <div class="carousel-container" data-carousel>
+                    <div class="carousel">
+                        <img src="./pnjeez/photo_5434066775965823032_y.jpg" alt="Healing retreat center surrounded by nature" loading="lazy">
+                        <img src="./pnjeez/photo_1_2025-08-01_20-21-56.jpg" alt="Retreat center exterior" loading="lazy">
+                        <img src="./pnjeez/photo_4_2025-08-01_20-21-56.jpg" alt="Nature view" loading="lazy">
+                        <img src="./pnjeez/photo_5_2025-08-01_20-21-56.jpg" alt="Nature view" loading="lazy">
+                        <img src="./pnjeez/photo_6_2025-08-01_20-21-56.jpg" alt="Nature view" loading="lazy">
+                    </div>
+                    <button class="carousel-arrow left" aria-label="Previous image">&#10094;</button>
+                    <button class="carousel-arrow right" aria-label="Next image">&#10095;</button>
+                </div>
                 <h3 data-key="sanctuary-card2-title">Healing Space</h3>
                 <p data-key="sanctuary-card2-text">
                     Our retreat center was created to inspire peace and presence. Surrounded by nature and filled with light, 
@@ -223,6 +242,89 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousels = document.querySelectorAll('.carousel-container');
+
+            carousels.forEach(carouselContainer => {
+                const carousel = carouselContainer.querySelector('.carousel');
+                const images = carousel.querySelectorAll('img');
+                const prevButton = carouselContainer.querySelector('.carousel-arrow.left');
+                const nextButton = carouselContainer.querySelector('.carousel-arrow.right');
+                let currentIndex = 0;
+                let autoSlideInterval;
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                const updateCarousel = () => {
+                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    prevButton.classList.toggle('hidden', currentIndex === 0);
+                    nextButton.classList.toggle('hidden', currentIndex === images.length - 1);
+                };
+
+                const startAutoSlide = () => {
+                    autoSlideInterval = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        updateCarousel();
+                    }, 5000);
+                };
+
+                const stopAutoSlide = () => {
+                    clearInterval(autoSlideInterval);
+                };
+
+                const showNext = () => {
+                    if (currentIndex < images.length - 1) {
+                        currentIndex++;
+                        updateCarousel();
+                        stopAutoSlide();
+                        startAutoSlide();
+                    }
+                };
+
+                const showPrev = () => {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        updateCarousel();
+                        stopAutoSlide();
+                        startAutoSlide();
+                    }
+                };
+
+                prevButton.addEventListener('click', showPrev);
+                nextButton.addEventListener('click', showNext);
+
+                images.forEach(img => {
+                    img.addEventListener('click', () => {
+                        stopAutoSlide();
+                        startAutoSlide();
+                    });
+                });
+
+                carouselContainer.addEventListener('touchstart', e => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    stopAutoSlide();
+                });
+
+                carouselContainer.addEventListener('touchend', e => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    if (touchStartX - touchEndX > 50) {
+                        showNext();
+                    } else if (touchEndX - touchStartX > 50) {
+                        showPrev();
+                    }
+                    startAutoSlide();
+                });
+
+                updateCarousel();
+                startAutoSlide();
+
+                carouselContainer.addEventListener('mouseenter', stopAutoSlide);
+                carouselContainer.addEventListener('mouseleave', startAutoSlide);
+            });
+        });
+    </script>
 
     <section id="pnjeez" class="container icons-grid"> 
         <div class="icon-item">
